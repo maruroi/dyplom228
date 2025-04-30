@@ -1,0 +1,45 @@
+* {
+    color: white;
+    text-decoration: none;
+    font-family: 'RobotoFlex', sans-serif;
+    list-style-type: none;
+}
+
+body {
+    background-color: #0F0F0F;
+}
+
+button {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #CE7D63;
+    border-radius: 4px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: none; 
+    box-shadow: none;
+}
+
+textarea {
+    resize: none;
+}

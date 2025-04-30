@@ -1,0 +1,15 @@
+{
+    "background.windowBackgrounds": [
+        "C:\\Users\\morin\\Downloads\\pexels-joshkjack-135018.jpg"
+    ],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css"
+        }
+    ],
+    "liveSassCompile.settings.includeItems": [
+        "/scss/**/*.scss"
+    ]
+}

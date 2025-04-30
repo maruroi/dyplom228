@@ -1,0 +1,441 @@
+.index-body {
+
+    @media (max-width: 768px) {
+    
+        .container {
+            
+            header {
+                width: 750px;
+    
+                nav {
+                    display: flex;
+                    gap: 280px;
+                    width: 100%;
+    
+                    ul {
+                        display: none;
+                    }
+                    
+                    .off-screen-menu.active {
+                        width: 200px;
+                        left: 150px;
+                        top: 80px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+    
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            line-height: 24px;
+        
+                            ul li::after {
+                                content: '';
+                                display: none;
+                            }
+                            
+                            li {
+                                display: block;
+                            }
+                        }
+                    }
+    
+                    .burger {
+                        display: block;
+                    }
+    
+                    button {
+                        display: none;
+                    }
+                }
+    
+                .header-hero {
+                    width: 749px;
+                    display: flex;
+                    flex-direction: column;
+    
+                    .header-summary {
+                        width: 749px;
+                        height: 500px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        
+                        h2 {
+                            font-size: 60px;
+                            width: 700px;
+                        }
+    
+                        p {
+                            font-size: 20px;
+                            width: 650px;
+                            margin-bottom: 5px;
+                        }
+    
+                        .benefits {
+                            width: 650px;
+                            
+    
+                            .benefits-txt {
+                                font-size: 15px;
+                                margin-left: 5px;
+                            }
+    
+                            .txt-none {
+                                display: none;
+                            }
+    
+                            &:last-child::after {
+                                content: '';
+                            }
+    
+                            :nth-last-child(2)::after {
+                                content: ''; 
+                            }
+                        }
+                    }
+    
+                    .header-photo {
+                        display: none;
+                    }
+                }
+    
+                .achievements {
+                    height: 700px;
+                    width: 749px;
+                    display: grid;
+                    display: flex;
+                    grid-template-columns: 350px 350px;
+                    grid-template-rows: 180px 180px;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    margin-bottom: -60px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    
+    
+                    .achive-item {
+                        width: 350px;
+                    }
+    
+                    .bigger-item {
+                        width: 720px;
+                        
+                    }
+                }
+            }
+    
+            main {
+                
+                .reasons-to-choose-nexgen {
+                    width: 749px;
+    
+                    .reasons-headline {
+                        height: 250px;
+                        
+                        h2 {
+                            font-size: 50px;
+                            width: 600px;
+                        }
+                    }
+                    
+                    .reasons-items {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        align-items: center;
+    
+                        .reason-item{
+                            width: 730px;
+                            height: 380px;
+    
+                            .reason-headline {
+                                font-size: 40px;
+                                line-height: 50px;
+                                width: 600px;
+                                margin-bottom: 5px;
+                            }
+    
+                            .reason-summary {
+                                width: 600px;
+                                font-size: 19px;
+                            }
+    
+                            button {
+                                margin-left: -445px;
+                            }
+                        }
+                    }
+                }
+    
+                .services {
+                    width: 750px;
+                    
+                    .services-headline {
+                        width: 730px;
+    
+                        h2 {
+                            font-size: 50px;
+                        }
+                    }
+    
+                    .services-items {
+                        display: flex;
+                        flex-direction: column;
+    
+                        .column {
+                            margin: 0 auto;
+    
+                            .services-item {
+                                width: 730px;
+                                height: 410px;
+    
+                                .services-item-headline {
+                                    margin-bottom: 100px;
+                                    margin-left: 70px;
+    
+                                    .block {
+    
+                                        .services-headline-txt {
+                                            width: 350px;
+                                        }
+                                    }
+    
+                                    .services-headline-btn {
+                                        display: flex;
+                                        justify-content: center;
+                                        width: 450px;
+                                        height: 70px;
+                                        border-radius: 13px;
+                                        color: black;
+                                        background-color: #CE7D63;
+                                        position: relative;
+                                        top: 260px;
+                                        left: -260px;
+                                        
+                                        img {
+                                            display: none;
+                                            
+                                        }
+                                    }
+                                }
+    
+                                .services-item-summary {
+                                    width: 600px;
+                                    margin-left: 70px;
+                                }
+    
+                                .services-item-price-btn {
+                                    font-size: 25px;
+                                    position: relative;
+                                    top: -150px;
+                                    left: -430px;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .our-works {
+                    width: 750px;
+    
+                    .works-headline {
+                        width: 730px;
+    
+                        .our-works-headline-btn {
+                            display: none;
+                        }
+                    }
+    
+                    .our-works-items {
+                        width: 750px;
+                        
+                        .row {
+                            width: 750px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+    
+                            .our-works-item {
+                                height: 480px;
+    
+                                .our-works-item-headline {
+    
+                                    .our-works-headline-btn {
+                                        position: relative;
+                                        top: 340px;
+                                        left: -365px;
+                                    }
+                                }
+                            }
+    
+                            .our-work-item-tech {
+                                width: 580px;
+    
+                                .our-work-item-tech-btn {
+                                    width: 580px;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .testimonials {
+                    width: 750px;
+    
+                    .testimonials-headline {
+                        width: 730px;
+    
+                        .testimonials-headline-btn {
+                            display: none;
+                        }
+                    }
+    
+                    .testimonials-items {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+    
+                        .testimonials-item {
+                            width: 730px;
+                            height: 430px;
+    
+                            .testimonials-item-headline {
+                                margin-left: -3px;
+                                font-size: 30px;
+                                text-align: center;
+                                width: 600px;
+                            }
+    
+                            .testimonials-item-review {
+                                font-size: 18px;
+                                text-align: center;
+                                width: 600px;
+                            }
+    
+                            .user {
+                                border-radius: 13px;
+                                margin-top: -55px;
+                                
+                            }
+                        }
+                    }
+                }
+    
+                .frequently-asked-questions {
+                    width: 750px;
+    
+                    .frequently-asked-qustions-headline {
+                        width: 730px;
+    
+                        .frequently-asked-questions-btn {
+                            display: none;
+                        }
+                    }
+    
+                    .column {
+                        width: 730px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+    
+                        .accordion {
+                            width: 730px;
+    
+                            li {
+                                position: relative;
+                                left: 14.5px;
+                                width: 700px;
+                            }
+                        }
+                    }
+                }
+    
+                .digital-presence {
+                    display: flex;
+                    flex-direction: column;
+                    width: 750px;
+                    height: 360px;
+    
+                    .presence-headline {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+    
+                        .presence-headline-txt {
+                            font-size: 30px;
+                            width: 700px;
+                            line-height: 150%;
+                        }
+    
+                        .presence-summary {
+                            font-size: 17px;
+                            width: 700px;
+                        }
+                    }
+    
+                    .presence-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 700px;
+                        margin-top: -280px;
+                    }
+                }
+    
+                .social-media-txt {
+                    width: 700px;
+                    display: flex;
+                    gap: 70px;
+                    justify-content: center;
+    
+                    .txt-none {
+                        display: none;
+                    }
+    
+                    &:last-child::after {
+                        content: '';
+                    }
+    
+                    :nth-last-child(2)::after {
+                        content: ''; 
+                    }
+                }
+            }
+    
+            footer {
+                width: 750px;
+                display: flex;
+                flex-direction: column;
+    
+                .column {
+    
+                    .links {
+                        width: 750px;
+                    }
+                }
+    
+                .newsletter {
+                    width: 750px;
+    
+                    .newsletter-headline {
+                        display: flex;
+                        flex-direction: column;
+                        width: 750px;
+                        height: 400px;
+                    }
+                }
+    
+                .all-rights-served {
+                    width: 750px;
+                    
+                    .left {
+                        position: relative;
+                        left: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
