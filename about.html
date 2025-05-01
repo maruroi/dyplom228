@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="../css/contact.css">
+        <title>Contact Page</title>
+    </head>
+    <body class="contact-page-body">
+        <div class="container">
+            <header>
+                <nav>
+                    <img src="/img/logo.png" alt="logo">
+                    <ul>
+                        <li class="home-block"><a href="/index.html">Home</a></li>
+                        <li class="project-block"><a href="/pages/projects.html">Projects</a></li>
+                        <li class="about-block"><a href="#">About</a></li>
+                    </ul>
+                    <section class="off-screen-menu">
+                        <img src="/img/logo.png" alt="" class="logo">
+                        <ul class="ham-menu-links">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </section>
+                    <div class="burger">
+                        <div class="ham-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <button><a href="/pages/contact.html">CONTACT US</a></button>
+                </nav>
+                <section class="header-hero fade-in">
+                    <div class="header-summary  fade-in">
+                        <h2>
+                            DIGITAL SOLUTIONS
+                            THAT DRIVE SUCCESS
+                        </h2>
+                        <p>
+                            At NexGen, we believe in the transformative power of digital solutions. 
+                            Our team of experts is dedicated to helping businesses like yours thrive in the fast-paced digital landscape.
+                        </p>
+                        <ul class="benefits  fade-in">
+                            <li class="benefits-txt txt-none">RKETING</li>
+                            <li class="benefits-txt txt-none">WEBSITE DESIGN</li>
+                            <li class="benefits-txt">BRANDING</li>
+                            <li class="benefits-txt">WEBSITE DEVELOPMENT</li>
+                            <li class="benefits-txt">MOBILE APP DEVELOPMENT</li>
+                            <li class="benefits-txt txt-none">DIGITAL</li>
+                        </ul>                        
+                    </div>
+                    <div class="header-photo">
+                        <section class="achievements fade-in">
+                            <div class="achive-item fade-in">
+                                <p class="achive-name fade-in">CLIENTS</p>
+                                <p class="achive-number fade-in">200+</p>
+                            </div>
+                            <div class="achive-item fade-in">
+                                <p class="achive-name fade-in">PROJECTS</p>
+                                <p class="achive-number fade-in">280+</p>
+                            </div>
+                            <div class="achive-item fade-in">
+                                <p class="achive-name fade-in">HAPPY CLIENTS</p>
+                                <p class="achive-number fade-in">100+</p>
+                            </div>
+                            <div class="achive-item fade-in">
+                                <p class="achive-name fade-in">FOLLOWERS</p>
+                                <p class="achive-number fade-in">420K</p>
+                            </div>
+                            <div class="achive-item bigger-item">
+                                <p class="achive-name fade-in">Years Of Experience</p>
+                                <p class="achive-number fade-in">10+</p>
+                            </div>
+                            <button class="achive-item-btn bigger-item"><img src="/img/arrow-top-right.png" alt="arrow-top-right">KNOW MORE</button>
+                        </section>
+                    </div>
+                </section>
+            </header>
+            <main class="fade-in">
+                <section class="our-works fade-in">
+                    <div class="contacts-window">
+                        <section class="works-headline fade-in">
+                            <div class="btn-block-switcher">
+                                <button class="web-design-swithcer-btn active fade-in" onclick="switchWorks(1, this)">PHONE NUMBER</button>
+                                <button class="web-development-swithcer-btn active fade-in" onclick="switchWorks(2, this)">EMAILS</button>
+                                <button class="marketing-swithcer-btn active fade-in" onclick="switchWorks(3, this)">OFFICE LOCATIONS</button>
+                            </div>
+                        </section>
+                        <section id="works-set-1" class="our-works-items fade-in">
+                            <div class="contact-block">
+                                <p class="contact-block-headline fade-in">Customer Support</p>
+                                <div class="contact-block-item fade-in">
+                                    <p class="contact-block-summary fade-in">+1 (800) 123-4567</p>
+                                    <img src="/img/arrow-top-right.png" alt="arrow-top-right">
+                                </div>
+                            </div>
+                            <div class="contact-block">
+                                <p class="contact-block-headline fade-in">Business Inquiries</p>
+                                <div class="contact-block-item fade-in">
+                                    <p class="contact-block-summary fade-in">+1 (800) 234-5678</p>
+                                    <img src="/img/arrow-top-right.png" alt="arrow-top-right">
+                                </div>
+                            </div>
+                            <div class="contact-block">
+                                <p class="contact-block-headline fade-in">Tech Support (24/7)</p>
+                                <div class="contact-block-item fade-in">
+                                    <p class="contact-block-summary fade-in">+1 (800) 345-6789</p>
+                                    <img src="/img/arrow-top-right.png" alt="arrow-top-right">
+                                </div>
+                            </div>
+                        </section>
+                        <section id="works-set-2" class="our-works-items" style="display: none;">
+                            <div class="contact-block">
+                                <p class="contact-block-headline fade-in">General inquiries</p>
+                                <div class="contact-block-item fade-in">
+                                    <p class="contact-block-summary fade-in">info@NexGen.com</p>
+                                    <img src="/img/arrow-top-right.png" alt="arrow-top-right">
+                                </div>
+                            </div>
+                            <div class="contact-block">
+                                <p class="contact-block-headline fade-in">Business Collaborations</p>
+                                <div class="contact-block-item fade-in">
+                                    <p class="contact-block-summary fade-in">partnerships@NexGen.com</p>
+                                    <img src="/img/arrow-top-right.png" alt="arrow-top-right">
+                                </div>
+                            </div>
+                            <div class="contact-block">
+                                <p class="contact-block-headline fade-in">Job Opportunities</p>
+                                <div class="contact-block-item fade-in">
+                                    <p class="contact-block-summary fade-in">careers@NexGen.com</p>
+                                    <img src="/img/arrow-top-right.png" alt="arrow-top-right">
+                                </div>
+                            </div>
+                        </section>
+                        <section id="works-set-3" class="our-works-items" style="display: none;">
+                            <div class="contact-block">
+                                <p class="contact-block-headline fade-in">Headquarters (USA)</p>
+                                <div class="contact-block-item fade-in">
+                                    <p class="contact-block-summary fade-in">San Francisco, CA 94107, USA</p>
+                                    <img src="/img/arrow-top-right.png" alt="arrow-top-right">
+                                </div>
+                            </div>
+                            <div class="contact-block">
+                                <p class="contact-block-headline fade-in">European Office</p>
+                                <div class="contact-block-item fade-in">
+                                    <p class="contact-block-summary fade-in">10115 Berlin, Germany</p>
+                                    <img src="/img/arrow-top-right.png" alt="arrow-top-right">
+                                </div>
+                            </div>
+                            <div class="contact-block">
+                                <p class="contact-block-headline fade-in">Asia-Pacific Office</p>
+                                <div class="contact-block-item fade-in">
+                                    <p class="contact-block-summary fade-in">Singapore 238841</p>
+                                    <img src="/img/arrow-top-right.png" alt="arrow-top-right">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <section class="message-window" method="post" action="connect.php">
+                        <div class="input-items">
+                            <div class="input-item">
+                                <p class="input-item-headline">FIRST NAME</p>
+                                <input class="input-txt" type="text" name="username" placeholder="Enter First Name">
+                            </div>
+                            <div class="input-item">
+                                <p class="input-item-headline">LAST NAME</p>
+                                <input class="input-txt" type="text" name="userlastname" placeholder="Enter Last Name">
+                            </div>
+                            <div class="input-item">
+                                <p class="input-item-headline">EMAIL</p>
+                                <input class="input-txt" type="text" name="email" placeholder="Enter Your Email">
+                            </div>
+                            <div class="input-item">
+                                <p class="input-item-headline">PHONE NUMBER</p>
+                                <div class="number-picker">
+                                    <div class="selected-country" onclick="togglePhoneDropdown()">
+                                        <img id="selectedFlag" src="https://flagcdn.com/w40/in.png" alt="IN" class="flag" />
+                                        <img src="/img/arrow-down.png" alt="Dropdown Arrow" class="arrow">
+                                    </div>
+                                    <div class="country-dropdown" id="phonePickerDropdown">
+                                        <div class="country-option" onclick="selectPhoneCountry('in', '+91')">
+                                            <img src="https://flagcdn.com/w40/in.png" alt="IN" class="flag" /> +91
+                                        </div>
+                                        <div class="country-option" onclick="selectPhoneCountry('us', '+1')">
+                                            <img src="https://flagcdn.com/w40/us.png" alt="US" class="flag" /> +1
+                                        </div>
+                                        <div class="country-option" onclick="selectPhoneCountry('ua', '+380')">
+                                            <img src="https://flagcdn.com/w40/ua.png" alt="UA" class="flag" /> +380
+                                        </div>
+                                    </div>
+                                </div>
+                                <input class="input-txt" type="text" id="phoneNumber" name="phonenumber" placeholder="Enter Phone Number">
+                            </div>
+                        </div>
+                        <div class="textarea-message">
+                            <p class="textarea-headline">MESSAGE</p>
+                            <textarea id="" name="usermessage" placeholder="Enter Your Message"></textarea>
+                        </div>
+                        <div class="term-use-message-btn">
+                            <div class="checkbox">
+                                <input type="checkbox" id="terms" name="terms" value="yes">
+                                <label for="terms">I agree with Terms of Use and Privacy Policy</label>
+                            </div>
+                            <button class="message-btn fade-in" type="submit" name="submit">
+                                SEND YOUR MESSAGE 
+                                <img src="/img/arrow-top-right-nobg.png" alt="arrow-top-right">
+                            </button>
+                        </div>
+                    </section>
+                </section>
+                <section class="testimonials fade-in">
+                    <section class="testimonials-headline fade-in">
+                        <h2>Testimonials</h2>
+                        <button class="testimonials-headline-btn fade-in">
+                            <img src="../img/arrow-top-right.png" alt="arrow-top-right">
+                            ALL TESTIMONIALS
+                        </button>
+                    </section>
+                    <section class="testimonials-items fade-in">
+                        <div class="testimonials-item fade-in">
+                            <p class="testimonials-item-headline fade-in">NEXGEN TURNED OUR BUSINESS AROUND!</p>
+                            <p class="testimonials-item-review fade-in">
+                                Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!
+                            </p>
+                            <div class="user fade-in">
+                                <img src="../img/sarah.png" alt="user-icon" width="50" height="50" class="fade-in">
+                                <div class="user-name-job-title fade-in">
+                                    <p class="user-name fade-in">Sarah Thompson</p>
+                                    <p class="user-job-title fade-in">CEO of BlueBloom</p>
+                                </div>
+                                <img src="../img/arrow-right.png" alt="arrow-right">
+                            </div>
+                        </div>
+                        <div class="testimonials-item fade-in">
+                            <p class="testimonials-item-headline fade-in">NEXGEN TURNED OUR BUSINESS AROUND!</p>
+                            <p class="testimonials-item-review fade-in">
+                                Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!
+                            </p>
+                            <div class="user fade-in">
+                                <img src="../img/warren.png" alt="user-icon" width="50" height="50" class="fade-in">
+                                <div class="user-name-job-title  fade-in">
+                                    <p class="user-name  fade-in">Wade Warren</p>
+                                    <p class="user-job-title  fade-in">Art Director</p>
+                                </div>
+                                <img src="../img/arrow-right.png" alt="arrow-right">
+                            </div>
+                        </div>
+                        <div class="testimonials-item  fade-in">
+                            <p class="testimonials-item-headline  fade-in">WORKING WITH NEXGEN WAS A PLEASURE.</p>
+                            <p class="testimonials-item-review  fade-in">
+                                Their web design team created a stunning website that perfectly captured our brand's essence. The feedback from our customers has been overwhelmingly positive.
+                            </p>
+                            <div class="user">
+                                <img src="../img/lisa.png" alt="user-icon" width="50" height="50" class="fade-in">
+                                <div class="user-name-job-title  fade-in">
+                                    <p class="user-name  fade-in">Lisa Williams</p>
+                                    <p class="user-job-title  fade-in">CEO Of HealthTech</p>
+                                </div>
+                                <img src="../img/arrow-right.png" alt="arrow-right">
+                            </div>
+                        </div>
+                        <div class="testimonials-item fade-in">
+                            <p class="testimonials-item-headline fade-in">NEXGEN'S WEB DESIGN TEAM BROUGHT OUR VISION TO LIFE.</p>
+                            <p class="testimonials-item-review fade-in">
+                                Their responsive design ensures our website looks stunning on all devices, contributing to increased user engagement. Highly recommended!
+                            </p>
+                            <div class="user">
+                                <img src="../img/lee.png" alt="user-icon" width="50" height="50" class="fade-in">
+                                <div class="user-name-job-title fade-in">
+                                    <p class="user-name fade-in">Jennifer Lee</p>
+                                    <p class="user-job-title fade-in">COO of Foodie Haven</p>
+                                </div>
+                                <img src="../img/arrow-right.png" alt="arrow-right">
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="frequently-asked-questions fade-in">
+                    <section class="frequently-asked-qustions-headline fade-in">
+                        <h2>Frequently Asked Questions</h2>
+                        <button class="frequently-asked-questions-btn fade-in">
+                            <img src="../img/arrow-top-right.png" alt="arrow-top-right">
+                            VIEW ALL
+                        </button>
+                    </section>
+                    <section class="column">
+                        <ul class="accordion fade-in">
+                            <li>
+                                <input type="radio" name="accordion" id="first" checked>
+                                <label for="first">
+                                    <p class="accordion-headline">
+                                        How long does it take to complete a web development project?
+                                    </p>
+                                    <img class="icon" src="../img/plus.png" alt="Toggle">
+                                </label>
+                                <div class="content">
+                                    <p class="accordion-summary">
+                                        The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="accordion" id="second" checked>
+                                <label for="second">
+                                    <p class="accordion-headline">
+                                        Can you handle large-scale mobile app development projects?
+                                    </p>
+                                    <img class="icon" src="../img/plus.png" alt="Toggle">
+                                </label>
+                                <div class="content">
+                                    <p class="accordion-summary">
+                                        Absolutely. Our team is equipped to manage large-scale mobile app projects with robust architecture, scalable backend solutions, and a structured development process to ensure timely and reliable delivery.
+                                    </p>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="accordion" id="third" checked>
+                                <label for="third">
+                                    <p class="accordion-headline">
+                                        Can you integrate third-party APIs into our mobile app?
+                                    </p>
+                                    <img class="icon" src="../img/plus.png" alt="Toggle">
+                                </label>
+                                <div class="content">
+                                    <p class="accordion-summary">
+                                        Yes, we specialize in seamless third-party API integrations. Whether it's payment gateways, social logins, or custom APIs, we ensure smooth and secure connectivity tailored to your app’s functionality.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="accordion" id="fourth" checked>
+                                <label for="fourth">
+                                    <p class="accordion-headline">
+                                        How do you ensure cross-platform compatibility for mobile apps?
+                                    </p>
+                                    <img class="icon" src="../img/plus.png" alt="Toggle">
+                                </label>
+                                <div class="content">
+                                    <p class="accordion-summary">
+                                        We use modern frameworks like Flutter and React Native, combined with rigorous testing across devices and operating systems, to ensure your app runs flawlessly on both iOS and Android platforms.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" name="accordion" id="fifth" checked>
+                                <label for="fifth">
+                                    <p class="accordion-headline">
+                                        What is your approach to user experience (UX) design?
+                                    </p>
+                                    <img class="icon" src="../img/plus.png" alt="Toggle">
+                                </label>
+                                <div class="content">
+                                    <p class="accordion-summary">
+                                        We adopt a user-first approach, starting with in-depth research and wireframing, followed by iterative design and testing. Our goal is to create intuitive, engaging interfaces that enhance usability and drive user satisfaction.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="modal-window fade-in">
+                            <p class="modal-window-headline fade-in">
+                                Ask your question
+                            </p>
+                            <div class="window fade-in">
+                                    <p>NAME</p>
+                                <input class="contact_form_input contact_form_input_name fade-in" type="text" placeholder="Enter your name">
+                                    <P>EMAIL</P>
+                                <input class="contact_form_input contact_form_input_email fade-in" type="email" placeholder="Email your email">
+                                    <p>YOUR QUESTION</p>
+                                <textarea class="contact_form_textarea fade-in" placeholder="Enter Your Questions Here ....."></textarea>
+                                <button>SEND YOUR MESSAGE</button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="digital-presence fade-in">
+                    <div class="presence-headline fade-in">
+                        <p class="presence-headline-txt fade-in">READY TO TRANSFORM YOUR DIGITAL PRESENCE?</p>
+                        <p class="presence-summary fade-in">Take the first step towards digital success with NexGen by your side. Our team of experts is eager to craft tailored solutions that drive growth for your business.</p>
+                    </div>
+                    <button class="presence-btn fade-in">
+                        GET IN TOUCH
+                        <img src="../img/arrow-top-right2.png" alt="arrow-top-right2">
+                    </button>
+                </section>
+                <ul class="social-media-txt fade-in">
+                    <li class="txt-none">on Social Media</li>
+                    <li class="txt-none">Follow Us on Social Media</li>
+                    <li class="txt-none">Follow Us on Social Media</li>
+                    <li>Follow Us on Social Media</li>
+                    <li>Follow Us on Social Media</li>
+                    <li class="txt-none">Follow Us on Soc</li>
+                </ul>    
+            </main>
+            <footer class="fade-in">
+                <section class="social-media fade-in">
+                    <div class="media-block fade-in">
+                        <div class="icons fade-in">
+                            <img src="../img/insta.png" alt="insta">
+                            <img src="../img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52">
+                        </div>
+                        <p class="social-media-headline fade-in">INSTAGRAM</p>
+                        <p class="social-media-summary fade-in">Share visually appealing snippets of our latest web projects.</p>
+                    </div>
+                    <div class="media-block fade-in">
+                        <div class="icons fade-in">
+                            <img src="../img/twitter.png" alt="twitter">
+                            <img src="../img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52">
+                        </div>
+                        <p class="social-media-headline fade-in">TWITTER</p>
+                        <p class="social-media-summary fade-in">Tweet about interesting coding challenges you've overcome.</p>
+                    </div>
+                    <div class="media-block fade-in">
+                        <div class="icons fade-in">
+                            <img src="../img/dribble.png" alt="dribble">
+                            <img src="../img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52">
+                        </div>
+                        <p class="social-media-headline fade-in">DRIBBLE</p>
+                        <p class="social-media-summary fade-in">Showcase design elements of our web projects.</p>
+                    </div>
+                    <div class="media-block fade-in">
+                        <div class="icons">
+                            <img src="../img/behance.png" alt="behance">
+                            <img src="../img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52">
+                        </div>
+                        <p class="social-media-headline fade-in">BEHANCE</p>
+                        <p class="social-media-summary fade-in">Create detailed presentations for our projects.</p>
+                    </div>
+                </section>
+                <div class="column fade-in">
+                    <section class="links fade-in">
+                        <ul>
+                            <li>
+                                <p class="links-headline">Home</p>
+                            </li>
+                            <li>
+                                <p class="link">Why Us</p>
+                            </li>
+                            <li>
+                                <p class="link">About Us</p>
+                            </li>
+                            <li>
+                                <p class="link">Testimonials</p>
+                            </li>
+                            <li>
+                                <p class="link">FAQ'S</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p class="links-headline">Services</p>
+                            </li>
+                            <li>
+                                <p class="link">Web Development</p>
+                            </li>
+                            <li>
+                                <p class="link">App Development</p>
+                            </li>
+                            <li>
+                                <p class="link">Web Design</p>
+                            </li>
+                            <li>
+                                <p class="link">Digital Marketing</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p class="links-headline">Projects</p>
+                            </li>
+                            <li>
+                                <p class="link">Klothink</p>
+                            </li>
+                            <li>
+                                <p class="link">Zenith</p>
+                            </li>
+                            <li>
+                                <p class="link">Novus</p>
+                            </li>
+                            <li>
+                                <p class="link">Apex</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p class="links-headline">Blogs</p>
+                            </li>
+                                <p class="link">Business</p>
+                            </li>
+                            <div class="new-link">
+                                <li>
+                                    <p class="link">Design</p>
+                                    <div class="soon">
+                                        <p class="soon-txt">Soon</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="new-link">
+                                <li>
+                                    <p class="link">Development</p>
+                                    <div class="soon">
+                                        <p class="soon-txt">Soon</p>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                    </section>
+                    <section class="newsletter fade-in">
+                        <section class="newsletter-headline fade-in">
+                            <div class="column">
+                                <p class="newsletter-headline-txt fade-in">NEWSLETTER</p>
+                                <p class="newsletter-headline-second-txt fade-in">SUBSCRIBE TO OUR NEWSLETTER</p>
+                            </div>
+                            <div class="email-input fade-in">
+                                <input class="contact-form_input contact-form-input_email fade-in" type="email" placeholder="Enter your email">
+                                <img src="../img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52">
+                            </div>
+                        </section>
+                        <section class="all-rights-served fade-in">
+                            <p class="left fade-in">© 2024 NextGen. All rights reserved.</p>
+                            <p>Terms & Conditions Privacy Policy</p>
+                        </section>
+                    </section>
+                </div>
+            </footer>
+            <script src="../js/script.js"></script>
+        </div>
+    </body>
+</html>
