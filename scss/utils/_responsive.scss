@@ -1,3 +1,4 @@
+@import "mixins";
 .index-body {
 
     @media (max-width: 768px) {
@@ -8,45 +9,7 @@
                 width: 750px;
     
                 nav {
-                    display: flex;
-                    gap: 280px;
-                    width: 100%;
-    
-                    ul {
-                        display: none;
-                    }
-                    
-                    .off-screen-menu.active {
-                        width: 200px;
-                        left: 150px;
-                        top: 80px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-    
-                        ul{
-                            display: flex;
-                            flex-direction: column;
-                            line-height: 24px;
-        
-                            ul li::after {
-                                content: '';
-                                display: none;
-                            }
-                            
-                            li {
-                                display: block;
-                            }
-                        }
-                    }
-    
-                    .burger {
-                        display: block;
-                    }
-    
-                    button {
-                        display: none;
-                    }
+                    @include navigation;
                 }
     
                 .header-hero {
@@ -281,160 +244,432 @@
                 }
     
                 .testimonials {
-                    width: 750px;
-    
-                    .testimonials-headline {
-                        width: 730px;
-    
-                        .testimonials-headline-btn {
-                            display: none;
-                        }
-                    }
-    
-                    .testimonials-items {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-    
-                        .testimonials-item {
-                            width: 730px;
-                            height: 430px;
-    
-                            .testimonials-item-headline {
-                                margin-left: -3px;
-                                font-size: 30px;
-                                text-align: center;
-                                width: 600px;
-                            }
-    
-                            .testimonials-item-review {
-                                font-size: 18px;
-                                text-align: center;
-                                width: 600px;
-                            }
-    
-                            .user {
-                                border-radius: 13px;
-                                margin-top: -55px;
-                                
-                            }
-                        }
-                    }
+                    @include testimonials;
                 }
     
                 .frequently-asked-questions {
+                    @include frequently-asked-questions;
+                }
+
+                .digital-presence {
+                    @include digital-presence;
+                }
+    
+                .social-media-txt {
+                    @include social-media-txt;
+                }
+            }
+    
+            footer {
+                @include footer;
+            }
+        }
+    }
+}
+
+.projects-body {
+    @media (max-width: 768px) {
+        
+            .container {
+                header {
                     width: 750px;
-    
-                    .frequently-asked-qustions-headline {
-                        width: 730px;
-    
-                        .frequently-asked-questions-btn {
-                            display: none;
-                        }
+        
+                    nav {
+                        @include navigation;
                     }
-    
-                    .column {
-                        width: 730px;
+
+                    .header-hero {
+                        width: 749px;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-    
-                        .accordion {
-                            width: 730px;
-    
-                            li {
-                                position: relative;
-                                left: 14.5px;
-                                width: 700px;
+
+                        .header-summary {
+                            width: 700px;
+                            text-align: center;
+
+                            h2 {
+                                font-size: 50px;
+                                width: 650px;
+                                margin-bottom: 20px;
+                            }
+
+                            p {
+                                font-size: 18px;
+                                width: 600px;
+                            }
+                        }
+
+                        .header-photo {
+                            width: 700px;
+                            margin-top: 30px;
+
+                            img {
+                                width: 100%;
+                                height: auto;
                             }
                         }
                     }
                 }
-    
-                .digital-presence {
-                    display: flex;
-                    flex-direction: column;
-                    width: 750px;
-                    height: 360px;
-    
-                    .presence-headline {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-    
-                        .presence-headline-txt {
-                            font-size: 30px;
+
+                main {
+                    .key-features {
+                        width: 750px;
+                        padding: 20px;
+
+                        .key-features-headline {
                             width: 700px;
-                            line-height: 150%;
+                            text-align: center;
+
+                            h2 {
+                                font-size: 40px;
+                            }
                         }
-    
-                        .presence-summary {
-                            font-size: 17px;
-                            width: 700px;
+
+                        .key-features-items {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 30px;
+                            align-items: center;
+
+                            .key-features-item {
+                                width: 700px;
+                                text-align: center;
+
+                                img {
+                                    margin-left: 5px;
+                                }
+                            }
                         }
                     }
-    
-                    .presence-btn {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 700px;
-                        margin-top: -280px;
+
+                    .our-works {
+                        width: 750px;
+
+                        .works-headline {
+                            width: 700px;
+                            text-align: center;
+
+                            .btn-block-switcher {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                button {
+                                    width: 30%;
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        .our-works-items {
+                            width: 700px;
+
+                            .row {
+                                flex-direction: column;
+                                align-items: center;
+                                
+                                gap: 30px;
+
+                                .our-works-item {
+                                    width: 700px;
+                                }
+
+                                img {
+                                    width: 50px;
+                                    
+                                }
+
+                                .icon-img {
+                                    width: 60px;
+                                    height: 60px;
+                                }
+
+                                .tech-img {
+                                    width: 670px;
+                                    height: 600px;   
+                                }
+
+                                .our-work-item-tech {
+                                    width: 700px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                            }
+                        }
+                    }
+
+                    .testimonials {
+                        @include testimonials;
+                    }
+        
+                    .frequently-asked-questions {
+                        @include frequently-asked-questions;
+                    }
+
+                    .digital-presence {
+                        @include digital-presence;
+                    }
+        
+                    .social-media-txt {
+                        @include social-media-txt;
                     }
                 }
+
+                footer {
+                    @include footer;
+                }
+            }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contact-page-body {
+
+        .container {
+            header {
+                width: 750px;
     
-                .social-media-txt {
-                    width: 700px;
+                nav {
+                    @include navigation;
+                }
+
+                .header-hero {
+                    width: 749px;
                     display: flex;
-                    gap: 70px;
-                    justify-content: center;
-    
+                    flex-direction: column;
+                    align-items: center;
+
+                    .header-summary {
+                        width: 700px;
+                        text-align: center;
+
+                        h2 {
+                            font-size: 50px;
+                            width: 650px;
+                            margin-bottom: 20px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            width: 600px;
+                        }
+                    }
+
+                    .header-photo {
+                        width: 700px;
+                        margin-top: 30px;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .benefits {
+                    width: 650px;
+                    
+
+                    .benefits-txt {
+                        font-size: 15px;
+                        margin-left: 5px;
+                    }
+
                     .txt-none {
                         display: none;
                     }
-    
+
                     &:last-child::after {
                         content: '';
                     }
-    
+
                     :nth-last-child(2)::after {
                         content: ''; 
                     }
                 }
             }
+
+            main {
+
+                .our-works {
+                    width: 300px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    
+                    .contacts-window {
+                        margin-bottom: 30px;
+                    }
+
+                    .message-window {
+                        width: 680px;
+                        height: 1100px;
+
+                        form {
+                            width: 300px;
+                            display: flex;
+                            flex-direction: column;
     
-            footer {
-                width: 750px;
-                display: flex;
-                flex-direction: column;
+                            .input-items {
+                                justify-content: center;
+                                align-items: center;
+                                width: 680px;
+                                display: flex;
+                                flex-direction: column;
     
-                .column {
+                                .input-item {
     
-                    .links {
-                        width: 750px;
+                                    .input-txt {
+                                        width: 500px;
+                                    }
+                                }
+                            }
+
+                            .textarea-message {
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                width: 680px;
+                                display: flex;
+                                
+                                .textarea-headline {
+                                    margin-left: -480px;
+                                }
+
+                                textarea {
+                                    width: 500px;
+                                    height: 200px;
+                                    margin-left: -45px;
+                                }
+                            }
+
+                            .term-use-message-btn {
+                                width: 500px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-wrap: wrap;
+                                margin-left: 90px;
+
+                                .checkbox {
+                                    margin-bottom: 40px;
+                                }
+                            }
+                        }
                     }
                 }
-    
-                .newsletter {
+
+                .key-features {
                     width: 750px;
-    
-                    .newsletter-headline {
+                    padding: 20px;
+
+                    .key-features-headline {
+                        width: 700px;
+                        text-align: center;
+
+                        h2 {
+                            font-size: 40px;
+                        }
+                    }
+
+                    .key-features-items {
                         display: flex;
                         flex-direction: column;
-                        width: 750px;
-                        height: 400px;
+                        gap: 30px;
+                        align-items: center;
+
+                        .key-features-item {
+                            width: 700px;
+                            text-align: center;
+
+                            img {
+                                margin-left: 5px;
+                            }
+                        }
                     }
+                }
+
+                .our-works {
+                    width: 750px;
+
+                    .works-headline {
+                        width: 700px;
+                        text-align: center;
+
+                        .btn-block-switcher {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            button {
+                                width: 30%;
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    .our-works-items {
+                        width: 700px;
+
+                        .row {
+                            flex-direction: column;
+                            align-items: center;
+                            
+                            gap: 30px;
+
+                            .our-works-item {
+                                width: 700px;
+                            }
+
+                            img {
+                                width: 50px;
+                                
+                            }
+
+                            .icon-img {
+                                width: 60px;
+                                height: 60px;
+                            }
+
+                            .tech-img {
+                                width: 670px;
+                                height: 600px;   
+                            }
+
+                            .our-work-item-tech {
+                                width: 700px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+
+                .testimonials {
+                    @include testimonials;
                 }
     
-                .all-rights-served {
-                    width: 750px;
-                    
-                    .left {
-                        position: relative;
-                        left: 100px;
-                    }
+                .frequently-asked-questions {
+                    @include frequently-asked-questions;
                 }
+
+                .digital-presence {
+                    @include digital-presence;
+                }
+    
+                .social-media-txt {
+                    @include social-media-txt;
+                }
+            }
+
+            footer {
+                @include footer;
             }
         }
     }
