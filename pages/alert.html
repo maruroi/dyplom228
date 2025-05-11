@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/alerts.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="custom-alert hidden" id="customAlert">
+            <div class="custom-alert-box">
+                <p id="customAlertMessage">Це кастомне повідомлення!</p>
+                <button onclick="closeCustomAlert()">OK</button>
+            </div>
+        </div>
+        <script>
+            function showCustomAlert(message) {
+                document.getElementById('customAlertMessage').textContent = message;
+                document.getElementById('customAlert').classList.remove('hidden');
+                }
+
+                function closeCustomAlert() {
+                document.getElementById('customAlert').classList.add('hidden');
+                }
+        </script>         
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="../css/book-call.css">
+        <title>Book a Call</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="block">
+                <section class="book-headline">
+                    <a href="../index.html">Back to projects</a>
+                    <h1 class="book-headline-txt">Book a Call With Us</h1>
+                    <p class="book-headline-summary">Schedule a consultation with our team to discuss your project requirements and how we can help bring your vision to life.</p>
+                </section>
+                <section class="why-us">
+                    <h2 class="why-us-headline-txt">Why Book a Call?</h2>
+                    <li>
+                        <ul>
+                            <img src="/img/galka-icon.png" alt="galka-icon" width="20" height="20">
+                            <p class="why-us-summary">Discuss your project requirements in detail</p>
+                        </ul>
+                        <ul>
+                            <img src="/img/galka-icon.png" alt="galka-icon" width="20" height="20">
+                            <p class="why-us-summary">Get expert advice on technology choices</p>
+                        </ul>
+                        <ul>
+                            <img src="/img/galka-icon.png" alt="galka-icon" width="20" height="20">
+                            <p class="why-us-summary">Receive a ballpark estimate for your project</p>
+                        </ul>
+                        <ul>
+                            <img src="/img/galka-icon.png" alt="galka-icon" width="20" height="20">
+                            <p class="why-us-summary">Learn about our development process</p>
+                        </ul>
+                        <ul>
+                            <img src="/img/galka-icon.png" alt="galka-icon" width="20" height="20">
+                            <p class="why-us-summary">Find out how we can help your business grow</p>
+                        </ul>
+                    </li>
+                </section>
+                <div class="contact-info">
+                    <h2 class="contact-info-headline-txt">Contact Information</h2>
+                    <ul>
+                        <li>
+                            <p class="contact-info-summary">Email: contact@company.com</p>
+                        </li>
+                        <li>
+                            <p class="contact-info-summary">Phone: +1 (555) 123-4567</p>
+                        </li>
+                        <li>
+                            <p class="contact-info-summary">Hours: Monday - Friday, 9am - 6pm EST</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="message-window">
+                <form id="contactForm" method="POST" action="http://localhost:3000/api/messages">
+                    <div class="input-items">
+                        <div class="input-item">
+                            <p class="input-item-headline">FIRST NAME</p>
+                            <input class="input-txt" type="text" name="username" placeholder="Enter First Name">
+                        </div>
+                        <div class="input-item">
+                            <p class="input-item-headline">LAST NAME</p>
+                            <input class="input-txt" type="text" name="userlastname" placeholder="Enter Last Name">
+                        </div>
+                        <div class="input-item">
+                            <p class="input-item-headline">EMAIL</p>
+                            <input class="input-txt" type="text" name="email" placeholder="Enter Your Email">
+                        </div>
+                        <div class="input-item">
+                            <p class="input-item-headline">PHONE NUMBER</p>
+                            <div class="number-picker">
+                                <div class="selected-country" onclick="togglePhoneDropdown()">
+                                    <img id="selectedFlag" src="https://flagcdn.com/w40/in.png" alt="IN" class="flag" />
+                                    <img src="../img/arrow-down.png" alt="Dropdown Arrow" class="arrow">
+                                </div>
+                                <div class="country-dropdown" id="phonePickerDropdown">
+                                    <div class="country-option" onclick="selectPhoneCountry('in', '+91')">
+                                        <img src="https://flagcdn.com/w40/in.png" alt="IN" class="flag" /> +91
+                                    </div>
+                                    <div class="country-option" onclick="selectPhoneCountry('us', '+1')">
+                                        <img src="https://flagcdn.com/w40/us.png" alt="US" class="flag" /> +1
+                                    </div>
+                                    <div class="country-option" onclick="selectPhoneCountry('ua', '+380')">
+                                        <img src="https://flagcdn.com/w40/ua.png" alt="UA" class="flag" /> +380
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="input-txt" type="text" id="phoneNumber" name="phonenumber" placeholder="Enter Phone Number">
+                        </div>
+                    </div>
+                    <div class="textarea-message">
+                        <p class="textarea-headline">MESSAGE</p>
+                        <textarea id="" name="usermessage" placeholder="Enter Your Message"></textarea>
+                    </div>
+                    <div class="term-use-message-btn">
+                        <div class="checkbox">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree with Terms of Use and Privacy Policy</label>
+                        </div>
+                        <button class="message-btn" type="submit">
+                            SEND YOUR MESSAGE 
+                            <img src="../img/arrow-top-right-nobg.png" alt="arrow-top-right">
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </body>
+</html>

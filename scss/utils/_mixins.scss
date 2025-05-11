@@ -1,8 +1,8 @@
 @mixin testimonials {
-    width: 750px;
+    width: 393px;
 
     .testimonials-headline {
-        width: 730px;
+        width: 393px;
 
         .testimonials-headline-btn {
             display: none;
@@ -15,36 +15,41 @@
         align-items: center;
 
         .testimonials-item {
-            width: 730px;
+            width: 393px;
             height: 430px;
 
             .testimonials-item-headline {
                 margin-left: -3px;
                 font-size: 30px;
                 text-align: center;
-                width: 600px;
+                width: 393px;
             }
 
             .testimonials-item-review {
                 font-size: 18px;
                 text-align: center;
-                width: 600px;
+                width: 393px;
             }
 
             .user {
                 border-radius: 13px;
                 margin-top: -55px;
-                
+                width: 393px;
             }
         }
     }
 }
 
 @mixin frequently-asked-questions {
-    width: 750px;
+    width: 393px;
 
     .frequently-asked-qustions-headline {
-        width: 730px;
+        width: 393px;
+
+        h2 {
+            font-size: 30px;
+            text-align: center;
+        }
 
         .frequently-asked-questions-btn {
             display: none;
@@ -52,18 +57,47 @@
     }
 
     .column {
-        width: 730px;
+        width: 393px;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         .accordion {
-            width: 730px;
 
-            li {
-                position: relative;
-                left: 14.5px;
-                width: 700px;
+            ul {
+                
+                li {
+                    position: relative;
+                    left: -60px;
+                    width: 350px;
+
+                    label {
+
+                        .accordion-headline {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .modal-window {
+            width: 380px;
+
+            .modal-window-headline  {
+                text-align: center;
+                width: 393px;
+            }
+
+            .window {
+
+                .contact_form_input {
+                    width: 200px;
+                }
+
+                .contact_form_textarea {
+                    width: 200px;
+                }
             }
         }
     }
@@ -72,8 +106,8 @@
 @mixin digital-presence {
     display: flex;
     flex-direction: column;
-    width: 750px;
-    height: 360px;
+    width: 393px;
+    height: 380px;
         
     .presence-headline {
         display: flex;
@@ -83,13 +117,16 @@
         
         .presence-headline-txt {
             font-size: 30px;
-            width: 700px;
+            width: 380px;
+            text-align: center;
             line-height: 150%;
         }
         
         .presence-summary {
             font-size: 17px;
-            width: 700px;
+            width: 380px;
+            text-align: center;
+            margin-bottom: 30px;
         }
     }
         
@@ -97,21 +134,26 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 700px;
+        width: 380px;
         margin-top: -280px;
     }
 }
 
 @mixin social-media-txt {
-    width: 700px;
+    width: 350px;
     display: flex;
-    gap: 70px;
     justify-content: center;
+    gap: 30px;
         
     .txt-none {
         display: none;
     }
         
+    li {
+        font-size: 11px;
+        
+    }
+
     &:last-child::after {
         content: '';
     }
@@ -122,42 +164,56 @@
 }
 
 @mixin footer {
-    width: 750px;
     display: flex;
     flex-direction: column;
         
+    .social-media {
+        width: 393px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        .media-block {
+            width: 393px;
+        }
+    }
+
     .column {
-        
+        width: 380px;
+
         .links {
-            width: 750px;
-        }
-    }
-        
-    .newsletter {
-        width: 750px;
-        
-        .newsletter-headline {
+            width: 393px;
+            height: 550px;
             display: flex;
-            flex-direction: column;
-            width: 750px;
-            height: 400px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
         }
-    }
-        
-    .all-rights-served {
-        width: 750px;
-                        
-        .left {
-            position: relative;
-            left: 100px;
+
+        .newsletter {
+            width: 393px;
+            
+            .newsletter-headline {
+                text-align: center;
+                width: 393px;
+                height: 200px;
+            }
+
+            .all-rights-served {
+                display: flex;
+                flex-direction: column;
+                width: 393px;
+                gap: 10px;
+            }
         }
     }
 }
 
 @mixin navigation {
     display: flex;
-    gap: 280px;
-    width: 100%;
+    gap: 150px;
+    width: 393px;
 
     ul {
         display: none;
@@ -165,7 +221,7 @@
     
     .off-screen-menu.active {
         width: 200px;
-        left: 150px;
+        left: -180px;
         top: 80px;
         display: flex;
         flex-direction: column;

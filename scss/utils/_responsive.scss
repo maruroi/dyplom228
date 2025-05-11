@@ -1,4 +1,4 @@
-@import "mixins";
+@import 'utils/mixins';
 .index-body {
 
     @media (max-width: 768px) {
@@ -248,7 +248,67 @@
                 }
     
                 .frequently-asked-questions {
-                    @include frequently-asked-questions;
+                    // @include frequently-asked-questions;
+                    width: 393px;
+
+                    .frequently-asked-qustions-headline {
+                        width: 393px;
+
+                        h2 {
+                            font-size: 30px;
+                            text-align: center;
+                        }
+
+                        .frequently-asked-questions-btn {
+                            display: none;
+                        }
+                    }
+
+                    .column {
+                        width: 393px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .accordion {
+
+                            ul {
+                                
+                                li {
+                                    position: relative;
+                                    left: -60px;
+                                    width: 350px;
+
+                                    label {
+
+                                        .accordion-headline {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .modal-window {
+                            width: 380px;
+
+                            .modal-window-headline  {
+                                text-align: center;
+                                width: 393px;
+                            }
+
+                            .window {
+
+                                .contact_form_input {
+                                    width: 200px;
+                                }
+
+                                .contact_form_textarea {
+                                    width: 200px;
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .digital-presence {
@@ -671,6 +731,112 @@
             footer {
                 @include footer;
             }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .blogs-open-body {
+        width: 393px;
+        header {
+            width: 393px;
+            margin-bottom: -100px;
+
+            nav {
+                @include navigation;
+            }
+
+            .header-hero {
+                width: 393px;
+                display: grid;
+                grid-template-columns: 393px;
+                
+
+                .header-summary {
+                    width: 393px;
+
+                    h2 {
+                        font-size: 50px;
+                        width: 300px;
+                        margin-left: -35px;
+                        
+                    }
+                }
+
+                .header-photo {
+                    width: 393px;
+
+                    .achievements {
+                        width: 393px;
+
+                        .achive-item {
+                            width: 90%;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            box-sizing: border-box;
+
+                            .achive-name {
+                                font-size: 15px;
+                            }
+
+                            .achive-number {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+
+            .main-img {
+                height: 250px !important;
+                margin-bottom: 120px;
+            }
+
+            .blog {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .blog-icons {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    margin-bottom: 20px;
+                }
+
+                .blog-summary {
+                    width: 100%;
+                    height: 1300px;
+                    margin-bottom: 30px;
+
+                    .blog-summary-txt {
+                        display: none;
+                    }
+                }
+            }
+
+            .testimonials {
+                @include testimonials;
+            }
+
+            .frequently-asked-questions {
+                @include frequently-asked-questions;
+            }
+
+            .digital-presence {
+                @include digital-presence;
+            }
+
+            .social-media-txt {
+                @include social-media-txt;
+            }
+        }
+
+        footer {
+            width: 393px;
+            @include footer;
         }
     }
 }

@@ -17,14 +17,15 @@
                     <ul>
                         <li class="home-block"><a href="index.html">Home</a></li>
                         <li class="project-block"><a href="pages/projects.html">Projects</a></li>
+                        <li class="about-block"><a href="pages/blogs-open.html">Blog</a></li>
                         <li class="about-block"><a href="#">About</a></li>
                     </ul>
                     <section class="off-screen-menu">
                         <img src="img/logo.png" alt="" class="logo">
                         <ul class="ham-menu-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="projects.html">Projects</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Blogs</a></li>
                         </ul>
                     </section>
                     <div class="burger">
@@ -129,7 +130,7 @@
                                         <img src="img/web-design.png" alt="design-icon">
                                         <p class="services-headline-txt">Web Design</p>
                                     </div>
-                                    <button class="services-headline-btn"><img src="img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52">BOOK A CALL</button>
+                                    <button class="services-headline-btn"><img src="img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52"><a href="./pages/book-call.html">BOOK A CALL</a></button>
                                 </div>
                                 <p class="services-item-summary">
                                     Our Web Design service is all about creating visually stunning and user-friendly websites that leave a lasting.
@@ -142,7 +143,7 @@
                                         <img src="img/web-development.png" alt="design-icon">
                                         <p class="services-headline-txt">Web Development</p>
                                     </div>
-                                    <button class="services-headline-btn"><img src="img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52">BOOK A CALL</button>
+                                    <button class="services-headline-btn"><img src="img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52"><a href="./pages/book-call.html">BOOK A CALL</a></button>
                                 </div>
                                 <p class="services-item-summary">
                                     Our Web Development service is focused on turning your website into a powerful digital asset. We utilize the latest technologies and industry best practices to build websites.
@@ -157,7 +158,7 @@
                                         <img src="img/mobile-app-development.png" alt="design-icon">
                                         <p class="services-headline-txt">Mobile App Development</p>
                                     </div>
-                                    <button class="services-headline-btn"><img src="img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52">BOOK A CALL</button>
+                                    <button class="services-headline-btn"><img src="img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52"><a href="./pages/book-call.html">BOOK A CALL</a></button>
                                 </div>
                                 <p class="services-item-summary">
                                     With our Mobile App Development service, we harness the power of mobile technology to create cutting-edge applications that engage your customers on-the-go.
@@ -170,7 +171,7 @@
                                         <img src="img/digital-marketing.png" alt="design-icon">
                                         <p class="services-headline-txt">Digital Marketing</p>
                                     </div>
-                                    <button class="services-headline-btn"><img src="img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52">BOOK A CALL</button>
+                                    <button class="services-headline-btn"><img src="img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52"><a href="./pages/book-call.html">BOOK A CALL</a></button>
                                 </div>
                                 <p class="services-item-summary">
                                     In the digital age, marketing is a critical aspect of your business's success. Our Digital Marketing service employs data-driven strategies to enhance your brand's visibility
@@ -233,7 +234,7 @@
                                         <img src="img/team-member6.png" alt="team-member-img" class="fade-in">
                                     </div>
                                 </div>
-                                <button class="our-work-item-tech-btn fade-in">BOOK A CALL</button>
+                                <button class="our-work-item-tech-btn fade-in"><a href="./pages/book-call.html">BOOK A CALL</a></button>
                             </section>
                         </div>
                         <div class="row">
@@ -280,7 +281,7 @@
                                         <img src="img/team-member11.png" alt="team-member-img">
                                     </div>
                                 </div>
-                                <button class="our-work-item-tech-btn">BOOK A CALL</button>
+                                <button class="our-work-item-tech-btn"><a href="./pages/book-call.html">BOOK A CALL</a></button>
                             </section>
                         </section>
                 </section>
@@ -441,10 +442,10 @@
                                     <p>NAME</p>
                                 <input class="contact_form_input contact_form_input_name fade-in" type="text" name="username" placeholder="Enter your name">
                                     <P>EMAIL</P>
-                                <input class="contact_form_input contact_form_input_email fade-in" type="email" type="text" name="username"placeholder="Email your email">
+                                <input class="contact_form_input contact_form_input_email fade-in" type="email" name="email" placeholder="Email your email">
                                     <p>YOUR QUESTION</p>
                                 <textarea class="contact_form_textarea fade-in" name="usermessage" placeholder="Enter Your Questions Here ....."></textarea>
-                                <button type="submit">SEND YOUR MESSAGE</button>
+                                <button>SEND YOUR MESSAGE</button>
                             </div>
                         </form>
                     </section>
@@ -581,20 +582,18 @@
                         </ul>
                     </section>
                     <section class="newsletter fade-in">
-                        <section class="newsletter-headline fade-in">
+                        <div class="newsletter-headline fade-in">
                             <div class="column fade-in">
                                 <p class="newsletter-headline-txt">NEWSLETTER</p>
                                 <p class="newsletter-headline-second-txt">SUBSCRIBE TO OUR NEWSLETTER</p>
                             </div>
-                            <div class="email-input fade-in" id="contactForm" method="POST" action="http://localhost:3000/api/messages">
-                                <input class="contact-form_input contact-form-input_email" type="email" name="email" placeholder="Enter your email">
-                                <img src="img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52" type="submit">
-                            </div>
-                        </section>
-                        <section class="all-rights-served fade-in">
+                        </div>
+                        <div class="all-rights-served fade-in">
                             <p class="left">© 2024 NextGen. All rights reserved.</p>
-                            <p><a href="pages/privacy.html">Terms & Conditions Privacy Policy</a></p>
-                        </section>
+                            <a class="terms-link" href="pages/privacy.html">
+                                Terms & Conditions Privacy Policy
+                            </a>
+                        </div>
                     </section>
                 </div>
             </footer>
