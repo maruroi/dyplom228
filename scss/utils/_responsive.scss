@@ -1,46 +1,45 @@
-@import 'utils/mixins';
+@import "mixins";
 .index-body {
-
     @media (max-width: 768px) {
-    
         .container {
-            
+            width: 393px;
             header {
-                width: 750px;
+                width: 393px;
     
                 nav {
                     @include navigation;
                 }
     
                 .header-hero {
-                    width: 749px;
+                    width: 393px;
                     display: flex;
                     flex-direction: column;
     
                     .header-summary {
-                        width: 749px;
+                        width: 393px;
                         height: 500px;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         
                         h2 {
-                            font-size: 60px;
-                            width: 700px;
+                            font-size: 40px;
+                            width: 393px;
                         }
     
                         p {
-                            font-size: 20px;
-                            width: 650px;
+                            font-size: 15px;
+                            width: 300px;
                             margin-bottom: 5px;
+                            margin-left: -90px;
                         }
     
                         .benefits {
-                            width: 650px;
-                            
+                            width: 340px;
+                            margin-left: -70px;
     
                             .benefits-txt {
-                                font-size: 15px;
+                                font-size: 10px;
                                 margin-left: 5px;
                             }
     
@@ -64,8 +63,8 @@
                 }
     
                 .achievements {
-                    height: 700px;
-                    width: 749px;
+                    height: 1100px;
+                    width: 393px;
                     display: grid;
                     display: flex;
                     grid-template-columns: 350px 350px;
@@ -73,7 +72,7 @@
                     flex-wrap: wrap;
                     margin: 0 auto;
                     margin-bottom: -60px;
-                    padding-top: 10px;
+                    padding-top: 25px;
                     padding-bottom: 10px;
                     
     
@@ -82,7 +81,7 @@
                     }
     
                     .bigger-item {
-                        width: 720px;
+                        width: 393px;
                         
                     }
                 }
@@ -91,14 +90,18 @@
             main {
                 
                 .reasons-to-choose-nexgen {
-                    width: 749px;
+                    width: 393px;
+                    
     
                     .reasons-headline {
                         height: 250px;
                         
                         h2 {
-                            font-size: 50px;
-                            width: 600px;
+                            text-align: center;
+                            font-size: 30px;
+                            position: relative;
+                            left: -38px;
+                            right: -50px;
                         }
                     }
                     
@@ -107,38 +110,36 @@
                         flex-direction: column;
                         gap: 20px;
                         align-items: center;
+                        justify-content: center;
     
                         .reason-item{
-                            width: 730px;
+                            width: 393px;
                             height: 380px;
     
                             .reason-headline {
-                                font-size: 40px;
+                                font-size: 30px;
+                                text-align: center;
                                 line-height: 50px;
-                                width: 600px;
+                                width: 393px;
                                 margin-bottom: 5px;
                             }
     
                             .reason-summary {
-                                width: 600px;
-                                font-size: 19px;
-                            }
-    
-                            button {
-                                margin-left: -445px;
+                                width: 350px;
+                                font-size: 15px;
                             }
                         }
                     }
                 }
     
                 .services {
-                    width: 750px;
+                    width: 393px;
                     
                     .services-headline {
-                        width: 730px;
+                        width: 393px;
     
                         h2 {
-                            font-size: 50px;
+                            font-size: 30px;
                         }
                     }
     
@@ -150,24 +151,24 @@
                             margin: 0 auto;
     
                             .services-item {
-                                width: 730px;
-                                height: 410px;
+                                width: 393px;
+                                height: 370px;
     
                                 .services-item-headline {
-                                    margin-bottom: 100px;
-                                    margin-left: 70px;
+                                    margin-bottom: 10px;
+                                    margin-left: 30px;
     
                                     .block {
     
                                         .services-headline-txt {
-                                            width: 350px;
+                                            width: 250px;
                                         }
                                     }
     
                                     .services-headline-btn {
                                         display: flex;
                                         justify-content: center;
-                                        width: 450px;
+                                        width: 380px;
                                         height: 70px;
                                         border-radius: 13px;
                                         color: black;
@@ -182,17 +183,23 @@
                                         }
                                     }
                                 }
+                                
+                                .services-item-summary-block {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    .services-item-summary {
+                                        width: 330px;
+                                        margin-left: 70px;
+                                        margin-bottom: -30px;
+                                    }
     
-                                .services-item-summary {
-                                    width: 600px;
-                                    margin-left: 70px;
-                                }
-    
-                                .services-item-price-btn {
-                                    font-size: 25px;
-                                    position: relative;
-                                    top: -150px;
-                                    left: -430px;
+                                    .services-item-price-btn {
+                                        font-size: 25px;
+                                        margin-left: -30px;
+                                    }
                                 }
                             }
                         }
@@ -248,67 +255,7 @@
                 }
     
                 .frequently-asked-questions {
-                    // @include frequently-asked-questions;
-                    width: 393px;
-
-                    .frequently-asked-qustions-headline {
-                        width: 393px;
-
-                        h2 {
-                            font-size: 30px;
-                            text-align: center;
-                        }
-
-                        .frequently-asked-questions-btn {
-                            display: none;
-                        }
-                    }
-
-                    .column {
-                        width: 393px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-
-                        .accordion {
-
-                            ul {
-                                
-                                li {
-                                    position: relative;
-                                    left: -60px;
-                                    width: 350px;
-
-                                    label {
-
-                                        .accordion-headline {
-                                            margin-bottom: 0;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        .modal-window {
-                            width: 380px;
-
-                            .modal-window-headline  {
-                                text-align: center;
-                                width: 393px;
-                            }
-
-                            .window {
-
-                                .contact_form_input {
-                                    width: 200px;
-                                }
-
-                                .contact_form_textarea {
-                                    width: 200px;
-                                }
-                            }
-                        }
-                    }
+                    @include frequently-asked-questions;
                 }
 
                 .digital-presence {

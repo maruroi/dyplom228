@@ -63,19 +63,16 @@
         align-items: center;
 
         .accordion {
-
-            ul {
                 
-                li {
-                    position: relative;
-                    left: -60px;
-                    width: 350px;
+            li {
+                position: relative;
+                left: -60px;
+                width: 350px;
 
-                    label {
+                label {
 
-                        .accordion-headline {
-                            margin-bottom: 0;
-                        }
+                    .accordion-headline {
+                        margin-bottom: 0;
                     }
                 }
             }
@@ -92,11 +89,15 @@
             .window {
 
                 .contact_form_input {
-                    width: 200px;
+                    width: 300px;
                 }
 
                 .contact_form_textarea {
-                    width: 200px;
+                    width: 300px;
+                }
+
+                button {
+                    width: 300px;
                 }
             }
         }
