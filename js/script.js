@@ -61,10 +61,11 @@ function selectPhoneCountry(code, prefix) {
 // Закриває випадаючий список при кліку поза ним
 document.addEventListener("click", function (e) {
     const picker = document.querySelector(".number-picker");
-    if (!picker.contains(e.target)) {
+    if (picker && !picker.contains(e.target)) {
         dropdown.classList.remove("show");
     }
 });
+
 
 // Form submission handlers
 async function submitContactForm(event) {
@@ -169,3 +170,44 @@ document.getElementById('contactForm').addEventListener('submit', async function
         alert('An error occurred.');
     }
 });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const icon = document.querySelector(".share-icon");
+    const msg = document.getElementById("copy-msg");
+
+    if (icon && navigator.clipboard) {
+      icon.addEventListener("click", function () {
+        navigator.clipboard.writeText(window.location.href).then(function () {
+          msg.style.display = "block";
+          setTimeout(() => msg.style.display = "none", 2000);
+        }).catch(err => {
+          console.error("Помилка копіювання:", err);
+        });
+      });
+    } else {
+      console.warn("Іконка або Clipboard API недоступні.");
+    }
+  });
+
+window.addEventListener("scroll", function () {
+    const nav = document.querySelector("nav");
+    if (window.scrollY > 50) {
+        nav.style.backgroundColor = "rgba(26, 26, 26, 0.7)"; // прозорий
+    } else {
+        nav.style.backgroundColor = "#1A1A1A"; // початковий
+    }
+});
+
+let commentForm = document.querySelector('.comment-form');
+let commentList = document.querySelector('.comment-list');
+let commentField = document.querySelector('.comment-field');
+
+commentForm.onsubmit = function(evt) {
+    evt.preventDefault();
+    let newComment = document.createElement('li');
+    newComment.classList.add('user-comment');
+    newComment.textContent =commentField.value;
+    commentField.value=' ';
+    commentList.appendChild(newComment);
+};
