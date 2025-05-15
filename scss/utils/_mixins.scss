@@ -73,6 +73,7 @@
 
                     .accordion-headline {
                         margin-bottom: 0;
+                        width: 300px;
                     }
                 }
             }
@@ -167,6 +168,7 @@
 @mixin footer {
     display: flex;
     flex-direction: column;
+    width: 393px;
         
     .social-media {
         width: 393px;

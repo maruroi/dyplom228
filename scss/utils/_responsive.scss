@@ -34,25 +34,28 @@
                             margin-left: -90px;
                         }
     
-                        .benefits {
-                            width: 340px;
-                            margin-left: -70px;
-    
-                            .benefits-txt {
-                                font-size: 10px;
-                                margin-left: 5px;
-                            }
-    
-                            .txt-none {
-                                display: none;
-                            }
-    
-                            &:last-child::after {
-                                content: '';
-                            }
-    
-                            :nth-last-child(2)::after {
-                                content: ''; 
+                        .benefits-track {
+
+                            .benefits {
+                                width: 340px;
+                                margin-left: -70px;
+        
+                                .benefits-txt {
+                                    font-size: 10px;
+                                    margin-left: 5px;
+                                }
+        
+                                .txt-none {
+                                    display: none;
+                                }
+        
+                                &:last-child::after {
+                                    content: '';
+                                }
+        
+                                :nth-last-child(2)::after {
+                                    content: ''; 
+                                }
                             }
                         }
                     }
@@ -102,6 +105,8 @@
                             position: relative;
                             left: -38px;
                             right: -50px;
+                            margin: 0;
+                            width: 300px;
                         }
                     }
                     
@@ -207,10 +212,9 @@
                 }
     
                 .our-works {
-                    width: 750px;
-    
+                    width: 393px;
                     .works-headline {
-                        width: 730px;
+                        width: 375px;
     
                         .our-works-headline-btn {
                             display: none;
@@ -218,32 +222,49 @@
                     }
     
                     .our-works-items {
-                        width: 750px;
+                        width: 393px;
                         
                         .row {
-                            width: 750px;
+                            width: 393px;
                             display: flex;
                             flex-direction: column;
                             align-items: center;
     
                             .our-works-item {
+                                width: 393px;
                                 height: 480px;
     
                                 .our-works-item-headline {
-    
-                                    .our-works-headline-btn {
-                                        position: relative;
-                                        top: 340px;
-                                        left: -365px;
-                                    }
+                                    width: 393px;
+                                }
+
+                                .our-works-item-summary {
+                                    width: 393px;
                                 }
                             }
     
+                            .works-img {
+                                width: 393px;
+                            }
+
                             .our-work-item-tech {
-                                width: 580px;
+                                width: 393px;
+                                margin-bottom: 50px;
     
                                 .our-work-item-tech-btn {
-                                    width: 580px;
+                                    width: 393px;
+                                }
+
+                                .team-members-headline {
+                                    margin-bottom: -20px;
+                                }
+
+                                .team-members {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    align-items: center;
+                                    width: 393px;
+                                    height: 170px;
                                 }
                             }
                         }
@@ -276,44 +297,61 @@
 
 .projects-body {
     @media (max-width: 768px) {
-        
+        width: 393px;
             .container {
                 header {
-                    width: 750px;
+                    width: 393px;
         
                     nav {
                         @include navigation;
                     }
 
                     .header-hero {
-                        width: 749px;
-                        display: flex;
-                        flex-direction: column;
+                        width: 393px;
+                        // display: flex;
+                        // flex-direction: column;
+                        // align-items: center;
+                        // justify-content: center;
+                        display: grid;
+                        grid-template-columns: 1fr;
                         align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
 
                         .header-summary {
-                            width: 700px;
+                            width: 393px;
                             text-align: center;
+                            margin-left: -70px;
+                            // display: flex;
+                            // flex-direction: column;
+                            // align-items: center;
+                            // justify-content: center;
 
                             h2 {
-                                font-size: 50px;
-                                width: 650px;
+                                font-size: 40px;
+                                width: 380px;
                                 margin-bottom: 20px;
                             }
 
                             p {
-                                font-size: 18px;
-                                width: 600px;
+                                font-size: 15px;
+                                width: 350px;
+                                margin-left: 15px;
                             }
                         }
 
                         .header-photo {
-                            width: 700px;
-                            margin-top: 30px;
+                            width: 393px;
+                            margin-top: -50px;
 
                             img {
                                 width: 100%;
                                 height: auto;
+                                // margin-bottom: 100px;
+                            }
+
+                            .header-photo-txt {
+                                display: none;
                             }
                         }
                     }
@@ -321,15 +359,17 @@
 
                 main {
                     .key-features {
-                        width: 750px;
-                        padding: 20px;
+                        width: 393px;
+                        
 
                         .key-features-headline {
-                            width: 700px;
+                            width: 393px;
                             text-align: center;
 
                             h2 {
-                                font-size: 40px;
+                                font-size: 30px;
+                                width: 300px;
+                                margin-left: -40px;
                             }
                         }
 
@@ -340,7 +380,7 @@
                             align-items: center;
 
                             .key-features-item {
-                                width: 700px;
+                                width: 380px;
                                 text-align: center;
 
                                 img {
@@ -351,58 +391,77 @@
                     }
 
                     .our-works {
-                        width: 750px;
-
+                        width: 393px;
                         .works-headline {
-                            width: 700px;
-                            text-align: center;
+                            width: 375px;
+                            height: 200px;
+                            display: flex;
+                            flex-wrap: wrap;
+        
+                            .our-works-headline-btn {
+                                display: none;
+                            }
+
+                            h2 {
+                                margin-bottom: -15px;
+                            }
 
                             .btn-block-switcher {
                                 display: flex;
-                                align-items: center;
-                                justify-content: space-between;
+                                gap: 10px;
 
                                 button {
-                                    width: 30%;
-                                    font-size: 14px;
-                                    font-weight: bold;
+                                    width: 110px;
+                                    font-size: 13px;
                                 }
                             }
                         }
-
+    
                         .our-works-items {
-                            width: 700px;
-
+                            width: 393px;
+                            
                             .row {
+                                width: 393px;
+                                display: flex;
                                 flex-direction: column;
                                 align-items: center;
-                                
-                                gap: 30px;
-
+        
                                 .our-works-item {
-                                    width: 700px;
-                                }
+                                    width: 393px;
+                                    height: 480px;
+        
+                                    .our-works-item-headline {
+                                        width: 393px;
+                                    }
 
-                                img {
-                                    width: 50px;
-                                    
+                                    .our-works-item-summary {
+                                        width: 393px;
+                                    }
                                 }
-
-                                .icon-img {
-                                    width: 60px;
-                                    height: 60px;
-                                }
-
-                                .tech-img {
-                                    width: 670px;
-                                    height: 600px;   
+        
+                                .works-img {
+                                    width: 393px;
                                 }
 
                                 .our-work-item-tech {
-                                    width: 700px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
+                                    width: 393px;
+                                    margin-bottom: 50px;
+        
+                                    .our-work-item-tech-btn {
+                                        width: 393px;
+                                    }
+
+                                    .team-members-headline {
+                                        margin-bottom: -20px;
+                                    }
+
+                                    .team-members {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        align-items: center;
+                                        width: 393px;
+                                        height: 170px;
+                                    }
                                 }
                             }
                         }
@@ -438,48 +497,63 @@
 
         .container {
             header {
-                width: 750px;
+                width: 393px;
     
                 nav {
                     @include navigation;
                 }
 
                 .header-hero {
-                    width: 749px;
+                    width: 393px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
 
                     .header-summary {
-                        width: 700px;
+                        width: 393px;
                         text-align: center;
 
                         h2 {
-                            font-size: 50px;
-                            width: 650px;
+                            font-size: 30px;
+                            width: 350px;
                             margin-bottom: 20px;
+                            margin-left: -50px;
                         }
 
                         p {
-                            font-size: 18px;
-                            width: 600px;
+                            font-size: 15px;
+                            width: 350px;
+                            margin-left: -50px;
                         }
                     }
 
                     .header-photo {
-                        width: 700px;
+                        width: 393px;;
                         margin-top: 30px;
 
                         img {
                             width: 100%;
                             height: auto;
                         }
+
+                        .achievements {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 10px;
+                            width: 393px;
+                            height: 900px;
+                            padding-bottom: 20px;
+
+                            .achive-item {
+                                width: 350px;
+                            }
+                        }
                     }
                 }
 
                 .benefits {
-                    width: 650px;
-                    
+                    width: 393px;
 
                     .benefits-txt {
                         font-size: 15px;
@@ -501,37 +575,75 @@
             }
 
             main {
+                width: 393px;
 
                 .our-works {
-                    width: 300px;
-                    display: flex;
+                    width: 393px; 
+                    max-width: 100%; 
+                    display: grid;
+                    grid-template-columns: 1fr;
                     align-items: center;
-                    flex-direction: column;
+                    justify-content: center;
+                    margin: 0;
                     
                     .contacts-window {
                         margin-bottom: 30px;
+                        width: 393px;
+
+                        .works-headline {
+                            width: 393px; 
+                            max-width: 100%; 
+                        }
+
+                        .btn-block-switcher {
+                            width: 385px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 10px;
+                            
+                        }
+
+                        .our-works-items {
+                            width: 393px; 
+                            max-width: 100%; 
+                            
+                            .contact-block {
+                                width: 393px; 
+                                max-width: 100%; 
+
+                                .contact-block-headline {
+                                    width: 310px; 
+                                    max-width: 100%; 
+                                }
+
+                                .contact-block-item {
+                                    width: 310px;
+                                }
+                            }
+                        }
                     }
 
                     .message-window {
-                        width: 680px;
+                        width: 393px;
                         height: 1100px;
 
                         form {
-                            width: 300px;
+                            width: 393px;
                             display: flex;
                             flex-direction: column;
     
                             .input-items {
                                 justify-content: center;
                                 align-items: center;
-                                width: 680px;
+                                width: 350px;
                                 display: flex;
                                 flex-direction: column;
     
                                 .input-item {
     
                                     .input-txt {
-                                        width: 500px;
+                                        width: 310px;
                                     }
                                 }
                             }
@@ -540,27 +652,27 @@
                                 justify-content: center;
                                 align-items: center;
                                 flex-direction: column;
-                                width: 680px;
+                                width: 350px;
                                 display: flex;
                                 
-                                .textarea-headline {
-                                    margin-left: -480px;
-                                }
+                                // .textarea-headline {
+                                //     margin-left: -480px;
+                                // }
 
                                 textarea {
-                                    width: 500px;
+                                    width: 350px;
                                     height: 200px;
-                                    margin-left: -45px;
+                                    
                                 }
                             }
 
                             .term-use-message-btn {
-                                width: 500px;
+                                width: 300px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
                                 flex-wrap: wrap;
-                                margin-left: 90px;
+                                
 
                                 .checkbox {
                                     margin-bottom: 40px;

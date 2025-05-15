@@ -47,14 +47,22 @@
                             At NexGen, we believe in the transformative power of digital solutions. 
                             Our team of experts is dedicated to helping businesses like yours thrive in the fast-paced digital landscape.
                         </p>
-                        <ul class="benefits  fade-in">
-                            <li class="benefits-txt txt-none">RKETING</li>
-                            <li class="benefits-txt txt-none">WEBSITE DESIGN</li>
-                            <li class="benefits-txt">BRANDING</li>
-                            <li class="benefits-txt">WEBSITE DEVELOPMENT</li>
-                            <li class="benefits-txt">MOBILE APP DEVELOPMENT</li>
-                            <li class="benefits-txt txt-none">DIGITAL</li>
-                        </ul>                        
+                        <div class="benefits">
+                            <ul class="benefits-track">
+                                <li class="benefits-txt txt-none">MARKETING</li>
+                                <li class="benefits-txt txt-none">WEBSITE DESIGN</li>
+                                <li class="benefits-txt">BRANDING</li>
+                                <li class="benefits-txt">WEBSITE DEVELOPMENT</li>
+                                <li class="benefits-txt">MOBILE APP DEVELOPMENT</li>
+                                <li class="benefits-txt txt-none">DIGITAL</li>
+                                <li class="benefits-txt txt-none">MARKETING</li>
+                                <li class="benefits-txt txt-none">WEBSITE DESIGN</li>
+                                <li class="benefits-txt">BRANDING</li>
+                                <li class="benefits-txt">WEBSITE DEVELOPMENT</li>
+                                <li class="benefits-txt">MOBILE APP DEVELOPMENT</li>
+                                <li class="benefits-txt txt-none">DIGITAL</li>
+                            </ul>
+                        </div>                        
                     </div>
                     <div class="header-photo">
                         <section class="achievements fade-in">
@@ -78,7 +86,10 @@
                                 <p class="achive-name fade-in">Years Of Experience</p>
                                 <p class="achive-number fade-in">10+</p>
                             </div>
-                            <button class="achive-item-btn bigger-item"><img src="../img/arrow-top-right.png" alt="arrow-top-right">KNOW MORE</button>
+                            <div class="achive-item bigger-item">
+                                <p class="achive-name fade-in">Years In The IT Market</p>
+                                <p class="achive-number fade-in">15+</p>
+                            </div>
                         </section>
                     </div>
                 </section>
@@ -220,10 +231,6 @@
                 <section class="testimonials fade-in">
                     <section class="testimonials-headline fade-in">
                         <h2>Testimonials</h2>
-                        <button class="testimonials-headline-btn fade-in">
-                            <img src="../img/arrow-top-right.png" alt="arrow-top-right">
-                            ALL TESTIMONIALS
-                        </button>
                     </section>
                     <section class="testimonials-items fade-in">
                         <div class="testimonials-item fade-in">
@@ -284,13 +291,9 @@
                         </div>
                     </section>
                 </section>
-                <section class="frequently-asked-questions fade-in">
+                <section class="frequently-asked-questions">
                     <section class="frequently-asked-qustions-headline fade-in">
                         <h2>Frequently Asked Questions</h2>
-                        <button class="frequently-asked-questions-btn fade-in">
-                            <img src="../img/arrow-top-right.png" alt="arrow-top-right">
-                            VIEW ALL
-                        </button>
                     </section>
                     <section class="column">
                         <ul class="accordion fade-in">
@@ -366,22 +369,20 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="modal-window fade-in">
+                        <form class="modal-window fade-in" id="contactForm" method="POST" action="http://localhost:3000/api/messages">
                             <p class="modal-window-headline fade-in">
                                 Ask your question
                             </p>
                             <div class="window fade-in">
-                                <form id="questionForm" method="POST" onsubmit="return submitQuestionForm(event)">
                                     <p>NAME</p>
-                                    <input name="name" class="contact_form_input contact_form_input_name fade-in" type="text" placeholder="Enter your name" required>
+                                <input class="contact_form_input contact_form_input_name fade-in" type="text" name="username" placeholder="Enter your name">
                                     <P>EMAIL</P>
-                                    <input name="email" class="contact_form_input contact_form_input_email fade-in" type="email" placeholder="Email your email" required>
+                                <input class="contact_form_input contact_form_input_email fade-in" type="email" name="email" placeholder="Email your email">
                                     <p>YOUR QUESTION</p>
-                                    <textarea name="question" class="contact_form_textarea fade-in" placeholder="Enter Your Questions Here ....." required></textarea>
-                                    <button type="submit">SEND YOUR MESSAGE</button>
-                                </form>
+                                <textarea class="contact_form_textarea fade-in" name="usermessage" placeholder="Enter Your Questions Here ....."></textarea>
+                                <button>SEND YOUR MESSAGE</button>
                             </div>
-                        </div>
+                        </form>
                     </section>
                 </section>
                 <section class="digital-presence fade-in">
@@ -389,19 +390,29 @@
                         <p class="presence-headline-txt fade-in">READY TO TRANSFORM YOUR DIGITAL PRESENCE?</p>
                         <p class="presence-summary fade-in">Take the first step towards digital success with NexGen by your side. Our team of experts is eager to craft tailored solutions that drive growth for your business.</p>
                     </div>
-                    <button class="presence-btn fade-in">
-                        GET IN TOUCH
-                        <img src="../img/arrow-top-right2.png" alt="arrow-top-right2">
-                    </button>
                 </section>
-                <ul class="social-media-txt fade-in">
-                    <li class="txt-none">on Social Media</li>
-                    <li class="txt-none">Follow Us on Social Media</li>
-                    <li class="txt-none">Follow Us on Social Media</li>
-                    <li>Follow Us on Social Media</li>
-                    <li>Follow Us on Social Media</li>
-                    <li class="txt-none">Follow Us on Soc</li>
-                </ul>    
+                <div class="benefits">
+                    <ul class="benefits-track">
+                        <li class="benefits-txt">MARKETING</li>
+                        <li class="benefits-txt">WEBSITE DESIGN</li>
+                        <li class="benefits-txt">BRANDING</li>
+                        <li class="benefits-txt">WEBSITE DEVELOPMENT</li>
+                        <li class="benefits-txt">MOBILE APP DEVELOPMENT</li>
+                        <li class="benefits-txt">DIGITAL</li>
+                        <li class="benefits-txt">MARKETING</li>
+                        <li class="benefits-txt">WEBSITE DESIGN</li>
+                        <li class="benefits-txt">BRANDING</li>
+                        <li class="benefits-txt">WEBSITE DEVELOPMENT</li>
+                        <li class="benefits-txt">MOBILE APP DEVELOPMENT</li>
+                        <li class="benefits-txt">DIGITAL</li>
+                        <li class="benefits-txt">MARKETING</li>
+                        <li class="benefits-txt">WEBSITE DESIGN</li>
+                        <li class="benefits-txt">BRANDING</li>
+                        <li class="benefits-txt">WEBSITE DEVELOPMENT</li>
+                        <li class="benefits-txt">MOBILE APP DEVELOPMENT</li>
+                        <li class="benefits-txt">DIGITAL</li>
+                    </ul>
+                </div>     
             </main>
             <footer class="fade-in">
                 <section class="social-media fade-in">
@@ -495,7 +506,7 @@
                             <li>
                                 <p class="links-headline">Blogs</p>
                             </li>
-                                <p class="link">Business</p>
+                                <p class="link" style="color: #81807E;">Business</p>
                             </li>
                             <div class="new-link">
                                 <li>
@@ -521,10 +532,6 @@
                                 <p class="newsletter-headline-txt fade-in">NEWSLETTER</p>
                                 <p class="newsletter-headline-second-txt fade-in">SUBSCRIBE TO OUR NEWSLETTER</p>
                             </div>
-                            <div class="email-input fade-in">
-                                <input class="contact-form_input contact-form-input_email fade-in" type="email" placeholder="Enter your email">
-                                <img src="../img/arrow-top-right.png" alt="arrow-top-right" width="52" height="52">
-                            </div>
                         </section>
                         <section class="all-rights-served fade-in">
                             <p class="left fade-in">© 2024 NextGen. All rights reserved.</p>
@@ -533,7 +540,7 @@
                     </section>
                 </div>
             </footer>
-            <script src="../js/script.js"></script>
+            <script src="../js/script.js" defer></script>
         </div>
     </body>
 </html>

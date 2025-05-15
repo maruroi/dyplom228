@@ -72,7 +72,7 @@
                 -webkit-box-shadow: 1px 1px 22px -5px rgba(206, 125, 99, 1);
                 -moz-box-shadow: 1px 1px 22px -5px rgba(206, 125, 99, 1);
                 box-shadow: 1px 1px 22px -5px rgba(206, 125, 99, 1);
-                height: 400px;
+                height: 450px;
                 max-width: 450px;
                 position: fixed;
                 right: -500px;
@@ -140,6 +140,18 @@
                     font-weight: bold;
                 }
             }
+
+            button {
+                background: #CE7D63;
+                border-radius: 7px;
+                border: none;
+                height: 50px;
+                width: 130px;
+
+                a {
+                    color: #E7BEB1;
+                }
+            }
         }
     
         .header-hero {
@@ -173,32 +185,48 @@
                     line-height: 150%;
                     margin-bottom: 90px;
                 }
-    
+
                 .benefits {
                     background-color: #0F0F0F;
                     border-radius: 13px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    height: 63px;      
-                    width: 99.5%;            
+                    height: 63px;
+                    width: 99.5%;
                     margin-left: -53px;
                     font-size: 17px;
-    
-                    li {
-                        margin-left: -40px;
-                        color: #676665;
-    
-                        &::after {
-                            content: '•';
-                            color: #CE7D63;
-                            font-size: 1.5rem;
+                    overflow: hidden; 
+
+                    .benefits-track {
+                        display: flex;
+                        align-items: center;
+                        gap: 50px;
+                        white-space: nowrap;
+                        animation: scroll 10s linear infinite;
+                        width: max-content; 
+                    }
+
+                        .benefits-txt {
+                            color: #676665;
                             position: relative;
-                            left: 26px;
+                            white-space: nowrap;
+
+                            &::after {
+                                content: '•';
+                                color: #CE7D63;
+                                font-size: 1.5rem;
+                                margin-left: 50px;
+                            }
+
+                            &:last-child::after {
+                                content: '';
+                            }
                         }
-            
-                        &:last-child::after {
-                            content: '';
+
+                    @keyframes scroll {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        100% {
+                            transform: translateX(-50%);
                         }
                     }
                 }
@@ -410,10 +438,9 @@
                 border: none;
                 height: 50px;
                 width: 130px;
-                
+
                 a {
-                    color: black;
-                    font-weight: bold;
+                    color: #E7BEB1;
                 }
             }
         }
@@ -696,28 +723,46 @@
                 .benefits {
                     background-color: #0F0F0F;
                     border-radius: 13px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    height: 63px;      
-                    width: 99.5%;            
-                    margin-left: -53px;
+                    height: 63px;
+                    width: 99.5%;
+                    margin-left: -30px;
+                    position: relative;
+                    top: -60px;
                     font-size: 17px;
-    
-                    li {
-                        margin-left: -40px;
-                        color: #676665;
-    
-                        &::after {
-                            content: '•';
-                            color: #CE7D63;
-                            font-size: 1.5rem;
+                    overflow: hidden; 
+
+                    .benefits-track {
+                        display: flex;
+                        align-items: center;
+                        gap: 50px;
+                        white-space: nowrap;
+                        animation: scroll 10s linear infinite;
+                        width: max-content; 
+                    }
+
+                        .benefits-txt {
+                            color: #676665;
                             position: relative;
-                            left: 26px;
+                            white-space: nowrap;
+
+                            &::after {
+                                content: '•';
+                                color: #CE7D63;
+                                font-size: 1.5rem;
+                                margin-left: 50px;
+                            }
+
+                            &:last-child::after {
+                                content: '';
+                            }
                         }
-            
-                        &:last-child::after {
-                            content: '';
+
+                    @keyframes scroll {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        100% {
+                            transform: translateX(-50%);
                         }
                     }
                 }
@@ -746,14 +791,14 @@
                     display: grid;
                     justify-content: center;
                     grid-template-columns: 280px 280px;
-                    grid-template-rows: 175px 175px;
-                    margin-top: 12px;
+                    grid-template-rows: 150px 150px;
+                    margin-top: 22px;
             
                     .achive-item {
                         background-color: #1A1A1A;
                         width: 270px;
-                        height: 165px;
-                        padding-top: 30px;
+                        height: 140px;
+                        padding-top: 20px;
                         box-sizing: border-box;
                         text-align: center;
                         border-radius: 13px;
@@ -796,7 +841,6 @@
         max-width: 1755px; 
         margin: 0 auto; 
         margin-bottom: 120px;
-        // padding-top: 80px;
     
         nav {
             display: flex;

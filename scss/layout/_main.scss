@@ -121,13 +121,15 @@
     
                     .services-item-headline {
                         display: flex;
-                        justify-content: space-around;
+                        align-items: center;
+                        width: 500px;
                         margin-bottom: 50px;
+                        margin-left: 105px;
     
                         .block {
                             display: flex;
                             align-items: center;
-                            gap: 15px;
+                            gap: 50px;
     
                             .services-headline-txt {
                                 text-transform: uppercase;
@@ -215,23 +217,15 @@
                         .our-works-item-headline {
                             display: flex;
                             align-items: center;
-                            justify-content: center;
-                            gap: 30px;
+                            gap: 50px;
+                            width: 450px;
+                            margin-left: 35px;
                             padding-top: 50px;
                             box-sizing: border-box;
                             margin-bottom: 50px;
     
                             .our-works-item-title {
                                 font-size: 22px;
-                            }
-    
-                            .our-works-headline-btn {
-                                background-color: transparent;
-                                border: none;
-                                display: flex;
-                                align-items: center;
-                                gap: 7px;
-                                font-size: 18px;
                             }
                         }
     
@@ -392,24 +386,12 @@
                 height: 156px;
                 background-color: #1A1A1A;
                 margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 1080px;
+                padding-left: 40px;
+                padding-top: 20px;
+                box-sizing: border-box;
                 font-size: 27px;
                 text-transform: uppercase;
                 margin-bottom: 20px;
-    
-                .testimonials-headline-btn {
-                    background-color: #1A1A1A;
-                    border: none;
-                    display: flex;
-                    align-items: center;
-                    gap: 7px;
-                    font-size: 17px;
-                    color: #B3B3B2;
-                    font-family: "Roboto Mono", monospace;
-                }
             }
     
             .testimonials-items {
@@ -483,24 +465,12 @@
                 height: 156px;
                 background-color: #1A1A1A;
                 margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 810px;
+                padding-left: 40px;
+                padding-top: 20px;
+                box-sizing: border-box;
                 font-size: 27px;
                 text-transform: uppercase;
                 margin-bottom: 20px;
-    
-                .frequently-asked-questions-btn {
-                    background-color: #1A1A1A;
-                    border: none;
-                    display: flex;
-                    align-items: center;
-                    gap: 7px;
-                    font-size: 17px;
-                    color: #B3B3B2;
-                    font-family: "Roboto Mono", monospace;
-                }
             }
     
             .column {
@@ -687,34 +657,48 @@
             }
         }
     
-        .social-media-txt {
-            margin: 0 auto;
+        .benefits {
             background-color: #1A1A1A;
             border-radius: 13px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 63px;      
-            width: 1715px;           
-            font-size: 17px;
+            height: 63px;
+            width: 94.6%;
+            margin: 0 auto;
             margin-bottom: 20px;
-    
-            li {
-                margin-left: -40px;
-                color: #676665;
-                text-transform: uppercase;
-                font-family: "Roboto Mono", monospace;
-    
-                &::after {
-                    content: '•';
-                    color: #CE7D63;
-                    font-size: 1.5rem;
+            font-size: 17px;
+            overflow: hidden; 
+
+            .benefits-track {
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                white-space: nowrap;
+                animation: scroll 10s linear infinite;
+                width: max-content; 
+            }
+
+                .benefits-txt {
+                    color: #676665;
                     position: relative;
-                    left: 26px;
+                    white-space: nowrap;
+
+                    &::after {
+                        content: '•';
+                        color: #CE7D63;
+                        font-size: 1.5rem;
+                        margin-left: 50px;
+                    }
+
+                    &:last-child::after {
+                        content: '';
+                    }
                 }
-    
-                &:last-child::after {
-                    content: '';
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
                 }
             }
         }
@@ -894,23 +878,15 @@
                         .our-works-item-headline {
                             display: flex;
                             align-items: center;
-                            justify-content: center;
-                            gap: 30px;
+                            gap: 50px;
+                            width: 450px;
+                            margin-left: 35px;
                             padding-top: 50px;
                             box-sizing: border-box;
                             margin-bottom: 50px;
     
                             .our-works-item-title {
                                 font-size: 22px;
-                            }
-    
-                            .our-works-headline-btn {
-                                background-color: transparent;
-                                border: none;
-                                display: flex;
-                                align-items: center;
-                                gap: 7px;
-                                font-size: 18px;
                             }
                         }
     
@@ -1071,24 +1047,12 @@
                 height: 156px;
                 background-color: #1A1A1A;
                 margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 1080px;
+                padding-left: 40px;
+                padding-top: 20px;
+                box-sizing: border-box;
                 font-size: 27px;
                 text-transform: uppercase;
                 margin-bottom: 20px;
-    
-                .testimonials-headline-btn {
-                    background-color: #1A1A1A;
-                    border: none;
-                    display: flex;
-                    align-items: center;
-                    gap: 7px;
-                    font-size: 17px;
-                    color: #B3B3B2;
-                    font-family: "Roboto Mono", monospace;
-                }
             }
     
             .testimonials-items {
@@ -1169,17 +1133,6 @@
                 font-size: 27px;
                 text-transform: uppercase;
                 margin-bottom: 20px;
-    
-                .frequently-asked-questions-btn {
-                    background-color: #1A1A1A;
-                    border: none;
-                    display: flex;
-                    align-items: center;
-                    gap: 7px;
-                    font-size: 17px;
-                    color: #B3B3B2;
-                    font-family: "Roboto Mono", monospace;
-                }
             }
     
             .column {
@@ -1366,34 +1319,48 @@
             }
         }
     
-        .social-media-txt {
-            margin: 0 auto;
+        .benefits {
             background-color: #1A1A1A;
             border-radius: 13px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 63px;      
-            width: 1715px;           
-            font-size: 17px;
+            height: 63px;
+            width: 94.6%;
+            margin: 0 auto;
             margin-bottom: 20px;
-    
-            li {
-                margin-left: -40px;
-                color: #676665;
-                text-transform: uppercase;
-                font-family: "Roboto Mono", monospace;
-    
-                &::after {
-                    content: '•';
-                    color: #CE7D63;
-                    font-size: 1.5rem;
+            font-size: 17px;
+            overflow: hidden; 
+
+            .benefits-track {
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                white-space: nowrap;
+                animation: scroll 10s linear infinite;
+                width: max-content; 
+            }
+
+                .benefits-txt {
+                    color: #676665;
                     position: relative;
-                    left: 26px;
+                    white-space: nowrap;
+
+                    &::after {
+                        content: '•';
+                        color: #CE7D63;
+                        font-size: 1.5rem;
+                        margin-left: 50px;
+                    }
+
+                    &:last-child::after {
+                        content: '';
+                    }
                 }
-    
-                &:last-child::after {
-                    content: '';
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
                 }
             }
         }
@@ -1531,6 +1498,7 @@
                 height: 740px;
                 border-radius: 13px;
                 background-color: #1A1A1A;
+                
 
                 .input-items {
                     display: grid;
@@ -1538,6 +1506,7 @@
                     grid-template-rows: 140px;
                     justify-content: center;
                     margin-bottom: 40px;
+                    
 
                     .input-item {
                         position: relative;
@@ -1741,24 +1710,12 @@
                 height: 156px;
                 background-color: #1A1A1A;
                 margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 1080px;
+                padding-left: 40px;
+                padding-top: 20px;
+                box-sizing: border-box;
                 font-size: 27px;
                 text-transform: uppercase;
                 margin-bottom: 20px;
-    
-                .testimonials-headline-btn {
-                    background-color: #1A1A1A;
-                    border: none;
-                    display: flex;
-                    align-items: center;
-                    gap: 7px;
-                    font-size: 17px;
-                    color: #B3B3B2;
-                    font-family: "Roboto Mono", monospace;
-                }
             }
     
             .testimonials-items {
@@ -1832,24 +1789,12 @@
                 height: 156px;
                 background-color: #1A1A1A;
                 margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 810px;
+                padding-left: 40px;
+                padding-top: 20px;
+                box-sizing: border-box;
                 font-size: 27px;
                 text-transform: uppercase;
                 margin-bottom: 20px;
-    
-                .frequently-asked-questions-btn {
-                    background-color: #1A1A1A;
-                    border: none;
-                    display: flex;
-                    align-items: center;
-                    gap: 7px;
-                    font-size: 17px;
-                    color: #B3B3B2;
-                    font-family: "Roboto Mono", monospace;
-                }
             }
     
             .column {
@@ -2036,34 +1981,48 @@
             }
         }
     
-        .social-media-txt {
-            margin: 0 auto;
+        .benefits {
             background-color: #1A1A1A;
             border-radius: 13px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 63px;      
-            width: 1715px;           
-            font-size: 17px;
+            height: 63px;
+            width: 94.6%;
+            margin: 0 auto;
             margin-bottom: 20px;
-    
-            li {
-                margin-left: -40px;
-                color: #676665;
-                text-transform: uppercase;
-                font-family: "Roboto Mono", monospace;
-    
-                &::after {
-                    content: '•';
-                    color: #CE7D63;
-                    font-size: 1.5rem;
+            font-size: 17px;
+            overflow: hidden; 
+
+            .benefits-track {
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                white-space: nowrap;
+                animation: scroll 10s linear infinite;
+                width: max-content; 
+            }
+
+                .benefits-txt {
+                    color: #676665;
                     position: relative;
-                    left: 26px;
+                    white-space: nowrap;
+
+                    &::after {
+                        content: '•';
+                        color: #CE7D63;
+                        font-size: 1.5rem;
+                        margin-left: 50px;
+                    }
+
+                    &:last-child::after {
+                        content: '';
+                    }
                 }
-    
-                &:last-child::after {
-                    content: '';
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
                 }
             }
         }
@@ -2455,24 +2414,12 @@
                 height: 156px;
                 background-color: #1A1A1A;
                 margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 1080px;
+                padding-left: 40px;
+                padding-top: 20px;
+                box-sizing: border-box;
                 font-size: 27px;
                 text-transform: uppercase;
                 margin-bottom: 20px;
-    
-                .testimonials-headline-btn {
-                    background-color: #1A1A1A;
-                    border: none;
-                    display: flex;
-                    align-items: center;
-                    gap: 7px;
-                    font-size: 17px;
-                    color: #B3B3B2;
-                    font-family: "Roboto Mono", monospace;
-                }
             }
     
             .testimonials-items {
@@ -2546,24 +2493,12 @@
                 height: 156px;
                 background-color: #1A1A1A;
                 margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 810px;
                 font-size: 27px;
+                padding-left: 40px;
+                padding-top: 20px;
+                box-sizing: border-box;
                 text-transform: uppercase;
                 margin-bottom: 20px;
-    
-                .frequently-asked-questions-btn {
-                    background-color: #1A1A1A;
-                    border: none;
-                    display: flex;
-                    align-items: center;
-                    gap: 7px;
-                    font-size: 17px;
-                    color: #B3B3B2;
-                    font-family: "Roboto Mono", monospace;
-                }
             }
     
             .column {
@@ -2644,6 +2579,8 @@
                         flex-direction: column;
                         background-color: #1A1A1A;
                         border-radius: 13px;
+                        padding-left: 75px;
+                        box-sizing: border-box;
         
                         .modal-window-headline {
                             font-size: 25px;
@@ -2657,6 +2594,8 @@
                         .window{
                             display: flex;
                             flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
             
                             input{
                                 width: 560px;
@@ -2750,34 +2689,48 @@
             }
         }
     
-        .social-media-txt {
-            margin: 0 auto;
+        .benefits {
             background-color: #1A1A1A;
             border-radius: 13px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 63px;      
-            width: 1715px;           
-            font-size: 17px;
+            height: 63px;
+            width: 94.6%;
+            margin: 0 auto;
             margin-bottom: 20px;
-    
-            li {
-                margin-left: -40px;
-                color: #676665;
-                text-transform: uppercase;
-                font-family: "Roboto Mono", monospace;
-    
-                &::after {
-                    content: '•';
-                    color: #CE7D63;
-                    font-size: 1.5rem;
+            font-size: 17px;
+            overflow: hidden; 
+
+            .benefits-track {
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                white-space: nowrap;
+                animation: scroll 10s linear infinite;
+                width: max-content; 
+            }
+
+                .benefits-txt {
+                    color: #676665;
                     position: relative;
-                    left: 26px;
+                    white-space: nowrap;
+
+                    &::after {
+                        content: '•';
+                        color: #CE7D63;
+                        font-size: 1.5rem;
+                        margin-left: 50px;
+                    }
+
+                    &:last-child::after {
+                        content: '';
+                    }
                 }
-    
-                &:last-child::after {
-                    content: '';
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
                 }
             }
         }
