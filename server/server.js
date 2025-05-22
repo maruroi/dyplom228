@@ -2,56 +2,54 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+require('dotenv').config();
 
 const app = express();
 
 app.use(cors({
-    origin: ['http://127.0.0.1:5500', 'http://localhost:5500'],
+    origin: process.env.ALLOWED_ORIGINS ? 
+        process.env.ALLOWED_ORIGINS.split(',') : 
+        ['http://127.0.0.1:5500', 'http://localhost:5500'],
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
 }));
+
 app.use(bodyParser.json());
 
-// Add route debugging
 app.use((req, res, next) => {
-    console.log(`${req.method} ${req.path}`);
-    next();
-});
-
-// Add path logging middleware
-app.use((req, res, next) => {
-    console.log('Request path:', req.path);
+    console.log(`[${new Date().toISOString()}] ${req.method} ${req.path}`);
     console.log('Request body:', req.body);
     next();
 });
 
-mongoose.connect('mongodb://localhost:27017/nexgen', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/nexgen', {
     useNewUrlParser: true,
     useUnifiedTopology: true
-}).then(() => {
-    console.log('Connected to MongoDB');
-}).catch(err => {
+})
+.then(() => console.log('Connected to MongoDB'))
+.catch(err => console.error('MongoDB connection error:', err));
+
+mongoose.connection.on('error', err => {
     console.error('MongoDB connection error:', err);
 });
 
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+mongoose.connection.on('disconnected', () => {
+    console.log('MongoDB disconnected');
+});
 
-// Contact form schema
 const ContactSchema = new mongoose.Schema({
-    username: String,
-    userlastname: String,
-    email: String,
-    phonenumber: String,
-    usermessage: String,
+    username: { type: String, required: true },
+    userlastname: { type: String, required: true },
+    email: { type: String, required: true },
+    phonenumber: { type: String, required: true },
+    usermessage: { type: String, required: true },
     date: { type: Date, default: Date.now }
 });
 
-// Question form schema
 const QuestionSchema = new mongoose.Schema({
-    name: String,
-    email: String,
-    question: String,
+    name: { type: String, required: true },
+    email: { type: String, required: true },
+    question: { type: String, required: true },
     date: { type: Date, default: Date.now }
 });
 
@@ -60,31 +58,54 @@ const Question = mongoose.model('Question', QuestionSchema);
 
 app.post('/submit-contact', async (req, res) => {
     try {
-        console.log('Contact form data received:', req.body);
+        const { username, userlastname, email, phonenumber, usermessage } = req.body;
+        
+        if (!username || !userlastname || !email || !phonenumber || !usermessage) {
+            return res.status(400).json({ error: 'All fields are required' });
+        }
+
         const contact = new Contact(req.body);
         await contact.save();
-        res.json({ message: 'Contact form submitted successfully' });
+        
+        res.status(201).json({ 
+            message: 'Contact form submitted successfully',
+            data: contact
+        });
     } catch (error) {
         console.error('Contact form error:', error);
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ error: 'Server error occurred' });
     }
 });
 
 app.post('/submit-question', async (req, res) => {
     try {
-        console.log('Question form data received:', req.body);
-        const question = new Question(req.body);
-        await question.save();
-        res.json({ message: 'Question submitted successfully' });
+        const { name, email, question } = req.body;
+        
+        if (!name || !email || !question) {
+            return res.status(400).json({ error: 'All fields are required' });
+        }
+
+        const questionDoc = new Question(req.body);
+        await questionDoc.save();
+        
+        res.status(201).json({ 
+            message: 'Question submitted successfully',
+            data: questionDoc
+        });
     } catch (error) {
         console.error('Question form error:', error);
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ error: 'Server error occurred' });
     }
 });
+
 
 app.use(express.static('public'));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
+});
+
+process.on('unhandledRejection', (err) => {
+    console.error('Unhandled promise rejection:', err);
 });

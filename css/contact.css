@@ -1947,6 +1947,8 @@
   font-weight: 400;
   background: #0F0F0F;
   margin-bottom: 10px;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 .index-body main .frequently-asked-questions .column .modal-window .window textarea {
   background: #0F0F0F;
@@ -1958,19 +1960,9 @@
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 50px;
-}
-.index-body main .frequently-asked-questions .column .modal-window .window input::-moz-placeholder, .index-body main .frequently-asked-questions .column .modal-window .window textarea::-moz-placeholder {
-  padding-left: 30px;
-}
-.index-body main .frequently-asked-questions .column .modal-window .window input::placeholder,
-.index-body main .frequently-asked-questions .column .modal-window .window textarea::placeholder {
-  padding-left: 30px;
-}
-.index-body main .frequently-asked-questions .column .modal-window .window textarea::-moz-placeholder {
+  padding: 0 30px;
   padding-top: 20px;
-}
-.index-body main .frequently-asked-questions .column .modal-window .window textarea::placeholder {
-  padding-top: 20px;
+  box-sizing: border-box;
 }
 .index-body main .frequently-asked-questions .column .modal-window .window button {
   width: 560px;
@@ -2523,6 +2515,8 @@
   font-weight: 400;
   background: #0F0F0F;
   margin-bottom: 10px;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 .projects-body main .frequently-asked-questions .column .modal-window .window textarea {
   background: #0F0F0F;
@@ -2534,19 +2528,9 @@
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 50px;
-}
-.projects-body main .frequently-asked-questions .column .modal-window .window input::-moz-placeholder, .projects-body main .frequently-asked-questions .column .modal-window .window textarea::-moz-placeholder {
-  padding-left: 30px;
-}
-.projects-body main .frequently-asked-questions .column .modal-window .window input::placeholder,
-.projects-body main .frequently-asked-questions .column .modal-window .window textarea::placeholder {
-  padding-left: 30px;
-}
-.projects-body main .frequently-asked-questions .column .modal-window .window textarea::-moz-placeholder {
+  padding: 0 30px;
   padding-top: 20px;
-}
-.projects-body main .frequently-asked-questions .column .modal-window .window textarea::placeholder {
-  padding-top: 20px;
+  box-sizing: border-box;
 }
 .projects-body main .frequently-asked-questions .column .modal-window .window button {
   width: 560px;
@@ -3097,6 +3081,8 @@
   font-weight: 400;
   background: #0F0F0F;
   margin-bottom: 10px;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 .contact-page-body main .frequently-asked-questions .column .modal-window .window textarea {
   background: #0F0F0F;
@@ -3108,19 +3094,9 @@
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 50px;
-}
-.contact-page-body main .frequently-asked-questions .column .modal-window .window input::-moz-placeholder, .contact-page-body main .frequently-asked-questions .column .modal-window .window textarea::-moz-placeholder {
-  padding-left: 30px;
-}
-.contact-page-body main .frequently-asked-questions .column .modal-window .window input::placeholder,
-.contact-page-body main .frequently-asked-questions .column .modal-window .window textarea::placeholder {
-  padding-left: 30px;
-}
-.contact-page-body main .frequently-asked-questions .column .modal-window .window textarea::-moz-placeholder {
+  padding: 0 30px;
   padding-top: 20px;
-}
-.contact-page-body main .frequently-asked-questions .column .modal-window .window textarea::placeholder {
-  padding-top: 20px;
+  box-sizing: border-box;
 }
 .contact-page-body main .frequently-asked-questions .column .modal-window .window button {
   width: 560px;
@@ -3716,6 +3692,8 @@
   font-weight: 400;
   background: #0F0F0F;
   margin-bottom: 10px;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 .blogs-open-body main .frequently-asked-questions .column .modal-window .window textarea {
   background: #0F0F0F;
@@ -3727,19 +3705,9 @@
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 50px;
-}
-.blogs-open-body main .frequently-asked-questions .column .modal-window .window input::-moz-placeholder, .blogs-open-body main .frequently-asked-questions .column .modal-window .window textarea::-moz-placeholder {
-  padding-left: 30px;
-}
-.blogs-open-body main .frequently-asked-questions .column .modal-window .window input::placeholder,
-.blogs-open-body main .frequently-asked-questions .column .modal-window .window textarea::placeholder {
-  padding-left: 30px;
-}
-.blogs-open-body main .frequently-asked-questions .column .modal-window .window textarea::-moz-placeholder {
+  padding: 0 30px;
   padding-top: 20px;
-}
-.blogs-open-body main .frequently-asked-questions .column .modal-window .window textarea::placeholder {
-  padding-top: 20px;
+  box-sizing: border-box;
 }
 .blogs-open-body main .frequently-asked-questions .column .modal-window .window button {
   width: 560px;

@@ -575,6 +575,8 @@
                                 font-weight: 400;
                                 background: #0F0F0F;
                                 margin-bottom: 10px;
+                                padding: 0 30px;
+                                box-sizing: border-box;
                             }
             
                             textarea{
@@ -587,15 +589,9 @@
                                 font-size: 14px;
                                 font-weight: 400;
                                 margin-bottom: 50px;
-                            }
-            
-                            input::placeholder,
-                            textarea::placeholder {
-                                padding-left: 30px; 
-                            }
-            
-                            textarea::placeholder{
+                                padding: 0 30px;
                                 padding-top: 20px;
+                                box-sizing: border-box;
                             }
             
                             button{
@@ -1227,7 +1223,7 @@
                             display: flex;
                             flex-direction: column;
             
-                            input{
+                             input{
                                 width: 560px;
                                 height: 70px;
                                 border-radius: 13px;
@@ -1237,6 +1233,8 @@
                                 font-weight: 400;
                                 background: #0F0F0F;
                                 margin-bottom: 10px;
+                                padding: 0 30px;
+                                box-sizing: border-box;
                             }
             
                             textarea{
@@ -1249,15 +1247,9 @@
                                 font-size: 14px;
                                 font-weight: 400;
                                 margin-bottom: 50px;
-                            }
-            
-                            input::placeholder,
-                            textarea::placeholder {
-                                padding-left: 30px; 
-                            }
-            
-                            textarea::placeholder{
+                                padding: 0 30px;
                                 padding-top: 20px;
+                                box-sizing: border-box;
                             }
             
                             button{
@@ -1889,7 +1881,7 @@
                             display: flex;
                             flex-direction: column;
             
-                            input{
+                             input{
                                 width: 560px;
                                 height: 70px;
                                 border-radius: 13px;
@@ -1899,6 +1891,8 @@
                                 font-weight: 400;
                                 background: #0F0F0F;
                                 margin-bottom: 10px;
+                                padding: 0 30px;
+                                box-sizing: border-box;
                             }
             
                             textarea{
@@ -1911,15 +1905,9 @@
                                 font-size: 14px;
                                 font-weight: 400;
                                 margin-bottom: 50px;
-                            }
-            
-                            input::placeholder,
-                            textarea::placeholder {
-                                padding-left: 30px; 
-                            }
-            
-                            textarea::placeholder{
+                                padding: 0 30px;
                                 padding-top: 20px;
+                                box-sizing: border-box;
                             }
             
                             button{
@@ -2571,79 +2559,9 @@
                 }
                 
                     .modal-window{
-                        width: 746px;
-                        height: 845px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        background-color: #1A1A1A;
-                        border-radius: 13px;
-                        padding-left: 75px;
-                        box-sizing: border-box;
-        
-                        .modal-window-headline {
-                            font-size: 25px;
-                            font-weight: 700;
-                            text-transform: uppercase;
-                            text-align: left;
-                            width: 560px;
-                            margin-bottom: 80px;
-                        }
-        
-                        .window{
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
-            
-                            input{
-                                width: 560px;
-                                height: 70px;
-                                border-radius: 13px;
-                                border: none;
-                                color: #757575;
-                                font-size: 14px;
-                                font-weight: 400;
-                                background: #0F0F0F;
-                                margin-bottom: 10px;
-                            }
-            
-                            textarea{
-                                background: #0F0F0F;
-                                width: 560px;
-                                height: 116px;
-                                border-radius: 13px;
-                                border: none;
-                                color: #757575;
-                                font-size: 14px;
-                                font-weight: 400;
-                                margin-bottom: 50px;
-                            }
-            
-                            input::placeholder,
-                            textarea::placeholder {
-                                padding-left: 30px; 
-                            }
-            
-                            textarea::placeholder{
-                                padding-top: 20px;
-                            }
-            
-                            button{
-                                width: 560px;
-                                height: 70px;
-                                background: #CE7D63;
-                                border-radius: 5px;
-                                color: black;
-                                border: none;
-                                font-size: 17px;
-                                font-weight: 500;
-                                margin: 0 auto;
-                            }
-                        }
+                        @include modal-window;
                     }
-                
+
             }
         }
     
