@@ -349,22 +349,20 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="modal-window fade-in">
+                        <form class="modal-window fade-in" id="contactForm" method="POST" action="http://localhost:3000/api/messages">
                             <p class="modal-window-headline fade-in">
                                 Ask your question
                             </p>
-                            <div class="window fade-in" id="contactForm" method="POST" action="http://localhost:3000/api/messages">
-                                <form id="questionForm" method="POST" onsubmit="return submitQuestionForm(event)">
+                            <div class="window fade-in">
                                     <p>NAME</p>
-                                    <input name="name" class="contact_form_input contact_form_input_name fade-in" type="text" placeholder="Enter your name" required>
+                                <input class="contact_form_input contact_form_input_name fade-in" type="text" name="username" placeholder="Enter your name">
                                     <P>EMAIL</P>
-                                    <input name="email" class="contact_form_input contact_form_input_email fade-in" type="email" placeholder="Email your email" required>
+                                <input class="contact_form_input contact_form_input_email fade-in" type="email" name="email" placeholder="Email your email">
                                     <p>YOUR QUESTION</p>
-                                    <textarea name="question" class="contact_form_textarea fade-in" placeholder="Enter Your Questions Here ....." required></textarea>
-                                    <button type="submit">SEND YOUR MESSAGE</button>
-                                </form>
+                                <textarea class="contact_form_textarea fade-in" name="usermessage" placeholder="Enter Your Questions Here ....."></textarea>
+                                <button>SEND YOUR MESSAGE</button>
                             </div>
-                        </div>
+                        </form>
                     </section>
                 </section>
                 <section class="digital-presence fade-in">
