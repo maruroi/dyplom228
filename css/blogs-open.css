@@ -1909,7 +1909,7 @@
 }
 .index-body main .frequently-asked-questions .column .accordion li input[type=radio]:checked + label .icon {
   content: "";
-  content: url("/img/minus.png");
+  content: url("../img/minus.png");
 }
 .index-body main .frequently-asked-questions .column .accordion li input[type=radio]:checked + label + .content {
   max-height: 400px;
@@ -2477,7 +2477,7 @@
 }
 .projects-body main .frequently-asked-questions .column .accordion li input[type=radio]:checked + label .icon {
   content: "";
-  content: url("/img/minus.png");
+  content: url("../img/minus.png");
 }
 .projects-body main .frequently-asked-questions .column .accordion li input[type=radio]:checked + label + .content {
   max-height: 400px;
@@ -3043,7 +3043,7 @@
 }
 .contact-page-body main .frequently-asked-questions .column .accordion li input[type=radio]:checked + label .icon {
   content: "";
-  content: url("/img/minus.png");
+  content: url("../img/minus.png");
 }
 .contact-page-body main .frequently-asked-questions .column .accordion li input[type=radio]:checked + label + .content {
   max-height: 400px;
@@ -3650,7 +3650,7 @@
 }
 .blogs-open-body main .frequently-asked-questions .column .accordion li input[type=radio]:checked + label .icon {
   content: "";
-  content: url("/img/minus.png");
+  content: url("../img/minus.png");
 }
 .blogs-open-body main .frequently-asked-questions .column .accordion li input[type=radio]:checked + label + .content {
   max-height: 400px;
