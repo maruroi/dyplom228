@@ -1909,7 +1909,7 @@
 }
 .index-body main .frequently-asked-questions .column .accordion li input[type=radio]:checked + label .icon {
   content: "";
-  content: url("/img/minus.png");
+  content: url("../img/minus.png");
 }
 .index-body main .frequently-asked-questions .column .accordion li input[type=radio]:checked + label + .content {
   max-height: 400px;
