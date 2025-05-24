@@ -4,7 +4,7 @@
   "description": "NexGen web application",
   "main": "backend/index.ts",
   "scripts": {
-    "start": "ts-node ./backend/index.ts",
+    "start": "node dist/index.js",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:server": "nodemon --watch backend --exec ts-node backend/index.ts",
     "dev:client": "live-server frontend",
