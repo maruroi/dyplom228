@@ -9,6 +9,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["backend/**/*"],
+  "include": ["backend/**/*.ts"],
   "exclude": ["node_modules"]
 }
