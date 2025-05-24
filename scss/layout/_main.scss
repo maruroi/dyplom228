@@ -2562,10 +2562,18 @@ $is-production: false;
                     }
                 }
                 
-                    .modal-window{
-                        @include modal-window;
-                    }
+                .modal-window{
+                    @include modal-window;
 
+                    .window {
+
+                        p {
+                            width: 200px;
+                            text-align: start;
+                            margin-left: -350px;
+                        }
+                    }
+                }
             }
         }
     

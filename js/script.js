@@ -139,6 +139,32 @@ async function submitQuestionForm(event) {
     }
 }
 
+// document.getElementById('contactForm').addEventListener('submit', async function(event) {
+//     event.preventDefault();
+
+//     const formData = new FormData(this);
+//     const data = Object.fromEntries(formData.entries());
+
+//     try {
+//         const response = await fetch('http://localhost:3000/api/messages', {
+//             method: 'POST',
+//             headers: { 'Content-Type': 'application/json' },
+//             body: JSON.stringify(data)
+//     });
+
+//     if (response.ok) {
+//         alert('Message sent successfully!');
+//         this.reset();
+//     } else {
+//         alert('Failed to send message.');
+//     }
+
+//     } catch (error) {
+//         console.error('Error submitting form:', error);
+//         alert('An error occurred.');
+//     }
+// });
+
 document.getElementById('contactForm').addEventListener('submit', async function(event) {
     event.preventDefault();
 
@@ -146,24 +172,25 @@ document.getElementById('contactForm').addEventListener('submit', async function
     const data = Object.fromEntries(formData.entries());
 
     try {
-        const response = await fetch('http://localhost:3000/api/messages', {
+        const response = await fetch('https://nexgen-backend.onrender.com/api/messages', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
-    });
+        });
 
-    if (response.ok) {
-        alert('Message sent successfully!');
-        this.reset();
-    } else {
-        alert('Failed to send message.');
-    }
+        if (response.ok) {
+            alert('Message sent successfully!');
+            this.reset();
+        } else {
+            alert('Failed to send message.');
+        }
 
     } catch (error) {
         console.error('Error submitting form:', error);
         alert('An error occurred.');
     }
 });
+
 
 window.addEventListener("scroll", function () {
     const nav = document.querySelector("nav");

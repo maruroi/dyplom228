@@ -3719,6 +3719,11 @@
   font-weight: 500;
   margin: 0 auto;
 }
+.blogs-open-body main .frequently-asked-questions .column .modal-window .window p {
+  width: 200px;
+  text-align: start;
+  margin-left: -350px;
+}
 .blogs-open-body main .digital-presence {
   margin: 0 auto;
   width: 1751px;
