@@ -533,7 +533,7 @@ $is-production: false;
     
                         input[type="radio"]:checked + label .icon {
                             @if $is-production {
-                                content: url("./img/minus.png");
+                                content: url("dyplom228/img/minus.png");
                             } @else {
                                 content: url("../../img/minus.png");
                             }
